@@ -9,6 +9,12 @@
 TASK(Task0) {
 	//serial->println("task.cpp: task0 has been started!");
 
+	header_serial_print(__FILE__, __FUNCTION__);
+	binary_serial_print_("My DDRD = 0b", _DDRD->reg);
+
+	header_serial_print(__FILE__, __FUNCTION__);
+	binary_serial_print_("Original DDRD = 0b", DDRD);
+
 	TerminateTask();
 };
 
@@ -21,10 +27,10 @@ TASK(Task1) {
 		ClearEvent(0x1);
 
 		GetResource(RES_PORTD_REG);
-		PORTD ^= MASK(3);
+		_PORTD->pins.pin3 ^= MASK(0);		//inverting the digital pin status
 
-		header_serial_print(__FILE__, __FUNCTION__);
-		binary_serial_print_("PORTD = 0b", PORTD);
+		//header_serial_print(__FILE__, __FUNCTION__);
+		//binary_serial_print_("PORTD = 0b", _PORTD->reg);
 
 		ReleaseResource(RES_PORTD_REG);
 	}
@@ -43,10 +49,10 @@ TASK(Task2) {
 		ClearEvent(0x1);
 
 		GetResource(RES_PORTD_REG);
-		PORTD ^= MASK(7);
+		_PORTD->pins.pin7 ^= MASK(0);		//inverting the digital pin status
 
-		header_serial_print(__FILE__, __FUNCTION__);
-		binary_serial_print_("PORTD = 0b", PORTD);
+		//header_serial_print(__FILE__, __FUNCTION__);
+		//binary_serial_print_("PORTD = 0b", _PORTD->reg);
 
 		ReleaseResource(RES_PORTD_REG);
 	}
