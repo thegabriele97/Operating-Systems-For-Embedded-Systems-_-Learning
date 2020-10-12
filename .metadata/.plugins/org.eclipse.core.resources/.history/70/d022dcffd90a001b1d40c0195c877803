@@ -1,0 +1,44 @@
+#include "ee.h"
+#include "Arduino.h"
+#include "HelpfulSerial.h"
+
+HelpfulSerial *serial;
+
+void loop(void) {
+	/*ActivateTask(TaskL1);*/
+}
+
+void idle_hook(void) {
+	loop();
+	if (serialEventRun)
+		serialEventRun();
+}
+
+void setup(void) {
+	//Serial.begin(9600);
+
+	/*Serial.println("ciao");
+	if (serialEventRun)
+			serialEventRun();*/
+}
+
+int main(void) {
+
+	init();
+
+	Serial.begin(115200);
+	header_serial_print(__FILE__, __FUNCTION__);
+	Serial.println("Hello from the main function!!");
+
+	setup();
+
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+
+	StartOS(OSDEFAULTAPPMODE);
+
+	return 0;
+
+}
+

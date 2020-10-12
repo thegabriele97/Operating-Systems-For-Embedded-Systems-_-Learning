@@ -1,0 +1,16 @@
+#ifndef MYARDUINO_H_
+#define MYARDUINO_H_
+
+#include "Arduino.h"
+
+#define BUFFSIZ 256			// Used for temporary string buffer
+#define MASK(n) (1<<n)		// Used for bitwise operations
+
+inline void header_serial_print(char *file_name, char *func_name) {
+	Serial.print(file_name);
+	Serial.print(": ");
+	Serial.print(func_name);
+	Serial.print(": ");
+}
+
+#endif /* MYARDUINO_H_ */

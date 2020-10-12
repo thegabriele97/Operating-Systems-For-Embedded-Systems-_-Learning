@@ -1,0 +1,20 @@
+#include "ee.h"
+#include "Arduino.h"
+//#include "HelpfulSerial.h"
+#include "MyArduino.h"
+#include "stdio.h"
+
+//extern HelpfulSerial *serial;
+
+void StartupHook() {
+	char buff[BUFFSIZ];
+
+	DDRD |= (MASK(3) | MASK(7));
+	PORTD &= ~(MASK(3) | MASK(7));
+
+	DDRB |= MASK(5);
+	PORTB |= MASK(5);
+
+	//sprintf(buff, "hook.cpp: DDRD=[0x%x]\tPORTD=[0x%x]", DDRD, PORTD);
+	//serial->println(buff);
+}

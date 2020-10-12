@@ -1,0 +1,74 @@
+/* ERIKA Enterprise. */
+#include "ee.h"
+
+/* Arduino SDK. */
+#include "Arduino.h"
+
+boolean   volatile stk_wrong = false;
+OsEE_addr volatile old_sp;
+
+extern "C" {
+	DeclareTask(TaskL1);
+	extern void idle_hook(void);
+
+}
+
+#if (defined(OSEE_API_DYNAMIC))
+TaskType TaskL1;
+#endif /* OSEE_API_DYNAMIC */
+
+volatile int i = 0;
+
+void loop(void) {
+	/*ActivateTask(TaskL1);
+	if ( !stk_wrong ) {
+		if (!old_sp) {
+		    old_sp = osEE_get_SP();
+		}
+		else if (old_sp != osEE_get_SP()) {
+		    stk_wrong = true;
+		}
+	}*/
+}
+
+void idle_hook(void) {
+	loop();
+	if (serialEventRun) serialEventRun();
+}
+
+void setup(void) {
+
+	pinMode(13, OUTPUT);
+	digitalWrite(13, LOW);
+}
+
+int main(void) {
+
+	init();
+
+	setup();
+
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+
+#if (defined(OSEE_API_DYNAMIC))
+	CreateTask(
+		&TaskL1,
+		OSEE_TASK_TYPE_BASIC,
+		TASK_FUNC(TaskL1),
+		1U,
+		1U,
+		1U,
+		128
+	);
+
+	SetIdleHook(idle_hook);
+#endif /* OSEE_API_DYNAMIC */
+
+	StartOS(OSDEFAULTAPPMODE);
+
+	return 0;
+
+}
+

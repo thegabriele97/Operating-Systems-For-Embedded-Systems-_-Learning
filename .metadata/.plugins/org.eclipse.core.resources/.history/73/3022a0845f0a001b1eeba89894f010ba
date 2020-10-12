@@ -1,0 +1,56 @@
+/* ERIKA Enterprise. */
+#include "ee.h"
+
+/* Arduino SDK. */
+#include "Arduino.h"
+#include "MyArduino.h"
+#include "stdio.h"
+
+//char buff[BUFSIZ];
+
+TASK(Task0) {
+	Serial.println("task.cpp: task0 has been started!");
+
+	TerminateTask();
+};
+
+TASK(Task1) {
+
+	Serial.println("task.cpp: Task1 has been started!");
+	//Serial.println("suca");
+
+	while(WaitEvent(0x1) == E_OK) {
+		ClearEvent(0x1);
+
+		//GetResource(RES_PORTD_REG);
+		PORTD ^= MASK(3);
+
+		sprintf(buff, "task.cpp: Task1: DDRD=[0x%x]\tPORTD=[0x%x]", DDRD, PORTD);
+		Serial.println(buff);
+
+		//ReleaseResource(RES_PORTD_REG);
+	}
+
+	Serial.println("task.cpp: Task1: closing...!");
+	TerminateTask();
+};
+
+TASK(Task2) {
+
+	Serial.println("task.cpp: Task2 has been started!");
+
+	while(WaitEvent(0x1) == E_OK) {
+		ClearEvent(0x1);
+
+		GetResource(RES_PORTD_REG);
+		PORTD ^= MASK(7);
+
+		sprintf(buff, "task.cpp: Task2: DDRD=[0x%x]\tPORTD=[0x%x]", DDRD, PORTD);
+		Serial.println(buff);
+
+		ReleaseResource(RES_PORTD_REG);
+	}
+
+	Serial.println("task.cpp: Task2: closing...!");
+	TerminateTask();
+};

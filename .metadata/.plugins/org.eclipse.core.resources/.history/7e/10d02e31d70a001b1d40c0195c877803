@@ -1,0 +1,14 @@
+#ifndef MYARDUINO_H_
+#define MYARDUINO_H_
+
+#include "Arduino.h"
+
+#define BUFFSIZ 256			// Used for temporary string buffer
+#define MASK(n) (1<<n)		// Used for bitwise operations
+
+inline void better_serial_print() {
+	Serial.print("task.cpp: Task1: 0b");
+	Serial.println(PORTD, BIN);
+}
+
+#endif /* MYARDUINO_H_ */

@@ -1,0 +1,605 @@
+# 1 "ee_applcfg.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "ee_applcfg.c"
+# 20 "ee_applcfg.c"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_conf.h" 1
+# 58 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_conf.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 1
+# 57 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_cfg.h" 1
+# 58 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_cfg.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\out/ee_applcfg.h" 1
+# 28 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\out/ee_applcfg.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oscfg.h" 1
+# 29 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\out/ee_applcfg.h" 2
+# 59 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_cfg.h" 2
+# 58 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_arch_override.h" 1
+# 59 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_utils.h" 1
+# 60 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler.h" 1
+# 59 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_cfg.h" 1
+# 58 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_cfg.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_gcc.h" 1
+# 63 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_gcc.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_arch_compiler_gcc.h" 1
+# 64 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_gcc.h" 2
+# 59 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler_cfg.h" 2
+# 60 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_compiler.h" 2
+# 61 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 1
+# 64 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h"
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed\\limits.h" 1 3 4
+# 65 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 2
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 1 3 4
+# 149 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+
+# 149 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 216 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 328 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef int wchar_t;
+# 426 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 437 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stddef.h" 3 4
+} max_align_t;
+# 66 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 2
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 1 3 4
+# 9 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 3 4
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 1 3 4
+# 125 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef signed int int8_t __attribute__((__mode__(__QI__)));
+typedef unsigned int uint8_t __attribute__((__mode__(__QI__)));
+typedef signed int int16_t __attribute__ ((__mode__ (__HI__)));
+typedef unsigned int uint16_t __attribute__ ((__mode__ (__HI__)));
+typedef signed int int32_t __attribute__ ((__mode__ (__SI__)));
+typedef unsigned int uint32_t __attribute__ ((__mode__ (__SI__)));
+
+typedef signed int int64_t __attribute__((__mode__(__DI__)));
+typedef unsigned int uint64_t __attribute__((__mode__(__DI__)));
+# 146 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 163 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_least8_t;
+
+
+
+
+typedef uint8_t uint_least8_t;
+
+
+
+
+typedef int16_t int_least16_t;
+
+
+
+
+typedef uint16_t uint_least16_t;
+
+
+
+
+typedef int32_t int_least32_t;
+
+
+
+
+typedef uint32_t uint_least32_t;
+
+
+
+
+
+
+
+typedef int64_t int_least64_t;
+
+
+
+
+
+
+typedef uint64_t uint_least64_t;
+# 217 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_fast8_t;
+
+
+
+
+typedef uint8_t uint_fast8_t;
+
+
+
+
+typedef int16_t int_fast16_t;
+
+
+
+
+typedef uint16_t uint_fast16_t;
+
+
+
+
+typedef int32_t int_fast32_t;
+
+
+
+
+typedef uint32_t uint_fast32_t;
+
+
+
+
+
+
+
+typedef int64_t int_fast64_t;
+
+
+
+
+
+
+typedef uint64_t uint_fast64_t;
+# 277 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\stdint.h" 3 4
+typedef int64_t intmax_t;
+
+
+
+
+typedef uint64_t uintmax_t;
+# 10 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include\\stdint.h" 2 3 4
+# 67 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 2
+
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_avr8_compiler.h" 1
+# 69 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 2
+
+
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\interrupt.h" 1 3
+# 38 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\interrupt.h" 3
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 1 3
+# 99 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\sfr_defs.h" 1 3
+# 126 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\sfr_defs.h" 3
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\inttypes.h" 1 3
+# 77 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\inttypes.h" 3
+typedef int32_t int_farptr_t;
+
+
+
+typedef uint32_t uint_farptr_t;
+# 127 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\sfr_defs.h" 2 3
+# 100 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 272 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\iom328p.h" 1 3
+# 273 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 703 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 3
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\portpins.h" 1 3
+# 704 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\common.h" 1 3
+# 706 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\version.h" 1 3
+# 708 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+
+
+
+
+
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\fuse.h" 1 3
+# 239 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\fuse.h" 3
+typedef struct
+{
+    unsigned char low;
+    unsigned char high;
+    unsigned char extended;
+} __fuse_t;
+# 715 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+
+
+# 1 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\lock.h" 1 3
+# 718 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\io.h" 2 3
+# 39 "d:\\downloads\\arduino-pr-beta1.9-build-119\\hardware\\tools\\avr\\avr\\include\\avr\\interrupt.h" 2 3
+# 72 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h" 2
+# 81 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h"
+
+# 81 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_platform_types.h"
+typedef enum {
+  OSEE_FALSE = (0!=0),
+  OSEE_TRUE = (0==0)
+} OsEE_bool;
+
+
+
+
+typedef void * OsEE_addr;
+typedef int8_t OsEE_sreg;
+typedef uint8_t OsEE_reg;
+typedef uint8_t OsEE_stack;
+
+
+typedef uint16_t OsEE_uint16;
+
+
+typedef uint16_t OsEE_object_id_type;
+
+
+typedef uint16_t OsEE_mem_size;
+
+
+typedef uint16_t OsEE_tick_type;
+
+
+
+
+typedef uint16_t OsEE_event_mask;
+
+
+typedef uint8_t OsEE_isr_src_id;
+
+
+typedef uint8_t OsEE_core_id;
+
+
+typedef void (* OsEE_void_cb) (void);
+# 62 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h" 1
+# 65 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_atmega_timer1ctc.h" 1
+# 122 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_atmega_timer1ctc.h"
+void OsEE_atmega_startTimer1(uint32_t microsecondsInterval);
+# 66 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h" 2
+# 102 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h"
+static inline OsEE_addr osEE_get_SP ( void )
+{
+  return (OsEE_addr)
+# 104 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h" 3
+                   (*(volatile uint16_t *)(((((uint16_t) &((*(volatile uint16_t *)((0x3D) + 0x20)))) - 0x20)) + 0x20))
+# 104 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_hal.h"
+                                              ;
+}
+
+static inline OsEE_core_id osEE_get_curr_core_id ( void ) {
+  return (OsEE_core_id)0U;
+}
+# 63 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 1
+# 59 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h"
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h" 1
+# 96 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef uint8_t AppModeType;
+# 120 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_reg TaskType;
+# 129 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_reg ISRType;
+
+
+
+
+
+typedef TaskType * TaskRefType;
+# 200 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef uint8_t TaskPrio;
+# 231 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_isr_src_id ISRSource;
+# 244 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef uint8_t TaskActivation;
+# 259 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_core_id CoreIdType;
+# 282 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef uint8_t CoreNumType;
+# 298 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_reg CoreMaskType;
+# 314 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef void (* TaskFunc) ( void );
+# 325 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef enum {
+
+
+  OSEE_TASK_TYPE_BASIC,
+
+
+  OSEE_TASK_TYPE_EXTENDED,
+
+
+
+  OSEE_TASK_TYPE_ISR2,
+
+
+  OSEE_TASK_TYPE_IDLE
+} OsEE_task_type;
+
+
+
+typedef OsEE_task_type TaskExecutionType;
+
+
+
+
+
+typedef enum {
+
+  OSEE_TASK_SUSPENDED,
+
+
+  OSEE_TASK_READY,
+
+
+
+  OSEE_TASK_READY_STACKED,
+
+  OSEE_TASK_WAITING,
+
+
+  OSEE_TASK_RUNNING,
+
+  OSEE_TASK_CHAINED
+} OsEE_task_status;
+# 382 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_task_status TaskStateType;
+
+typedef TaskStateType * TaskStateRefType;
+# 663 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_object_id_type ObjectIDType;
+# 675 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef OsEE_mem_size MemSize;
+# 689 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef enum {
+  E_OK,
+  E_OS_ACCESS,
+  E_OS_CALLEVEL,
+  E_OS_ID,
+  E_OS_LIMIT,
+  E_OS_NOFUNC,
+  E_OS_RESOURCE,
+  E_OS_STATE,
+  E_OS_VALUE,
+  E_OS_SERVICEID,
+  E_OS_ILLEGAL_ADDRESS,
+  E_OS_MISSINGEND,
+  E_OS_DISABLEDINT,
+  E_OS_STACKFAULT,
+  E_OS_PARAM_POINTER,
+  E_OS_PROTECTION_MEMORY,
+  E_OS_PROTECTION_TIME,
+  E_OS_PROTECTION_ARRIVAL,
+  E_OS_PROTECTION_LOCKED,
+  E_OS_PROTECTION_EXCEPTION,
+
+  E_OS_SPINLOCK,
+  E_OS_INTERFERENCE_DEADLOCK,
+  E_OS_NESTING_DEADLOCK,
+
+  E_OS_CORE,
+
+
+  E_OS_SYS_INIT,
+  E_OS_SYS_SUSPEND_NESTING_LIMIT,
+
+  E_OS_SYS_TASK,
+  E_OS_SYS_STACK,
+  E_OS_SYS_ACT
+} OsEE_status_type;
+
+
+
+
+typedef OsEE_status_type StatusType;
+# 742 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef union {
+  ObjectIDType num_param;
+  OsEE_addr p_param;
+} OsEE_api_param;
+# 756 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+typedef enum {
+  OSServiceId_ActivateTask = (0),
+  OSServiceId_TerminateTask = (2),
+  OSServiceId_ChainTask = (4),
+  OSServiceId_Schedule = (6),
+  OSServiceId_GetTaskID = (8),
+  OSServiceId_GetTaskState = (10),
+  OSServiceId_DisableAllInterrupts = (12),
+  OSServiceId_EnableAllInterrupts = (14),
+  OSServiceId_SuspendAllInterrupts = (16),
+  OSServiceId_ResumeAllInterrupts = (18),
+  OSServiceId_SuspendOSInterrupts = (20),
+  OSServiceId_ResumeOSInterrupts = (22),
+# 804 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api_types.h"
+  OSServiceId_GetActiveApplicationMode = (70),
+  OSServiceId_ShutdownOS = (72),
+  OSServiceId_StartOS = (74),
+
+
+
+
+
+  OSId_TaskBody = (78),
+
+
+  OSId_ISR2Body = (80),
+
+
+  OSId_Action = (82),
+
+  OSId_Kernel = (84),
+  OsId_Invalid = (86)
+} OsEE_service_id_type;
+
+
+typedef OsEE_service_id_type OSServiceIdType;
+# 60 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h" 1
+# 112 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  DisableAllInterrupts
+(
+  void
+);
+# 137 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  EnableAllInterrupts
+(
+  void
+);
+# 168 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  SuspendAllInterrupts
+(
+  void
+);
+# 196 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  ResumeAllInterrupts
+(
+  void
+);
+# 226 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  SuspendOSInterrupts
+(
+  void
+);
+# 253 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+void
+  ResumeOSInterrupts
+(
+  void
+);
+# 288 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  StartOS
+(
+  AppModeType Mode
+);
+# 319 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  ShutdownOS
+(
+  StatusType Error
+);
+# 339 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+AppModeType
+  GetActiveApplicationMode
+(
+  void
+);
+# 375 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  ActivateTask
+(
+  TaskType TaskID
+);
+# 419 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  ChainTask
+(
+  TaskType TaskID
+);
+# 456 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  TerminateTask
+(
+  void
+);
+# 477 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  GetTaskID
+(
+  TaskRefType TaskID
+);
+# 504 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  GetTaskState
+(
+  TaskType TaskID,
+  TaskStateRefType State
+);
+# 538 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+StatusType
+  Schedule
+(
+  void
+);
+# 1352 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_osek.h"
+ ISRType
+  GetISRID
+(
+  void
+);
+# 61 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_dynamic.h" 1
+# 62 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_oo_api_extension.h" 1
+# 63 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 2
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h" 1
+# 65 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+struct OsEE_TDB_tag;
+# 75 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+typedef struct OsEE_SN_tag {
+
+  struct OsEE_SN_tag * p_next;
+
+  struct OsEE_TDB_tag const * p_tdb;
+} OsEE_SN;
+# 92 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+static inline OsEE_SN *
+  osEE_sn_alloc
+(
+  OsEE_SN * * pp_first
+)
+{
+  OsEE_SN * p_sn_allocated;
+
+  p_sn_allocated = (*pp_first);
+  (*pp_first) = p_sn_allocated->p_next;
+  p_sn_allocated->p_next = 
+# 102 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h" 3 4
+                           ((void *)0)
+# 102 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+                               ;
+
+  return p_sn_allocated;
+}
+# 117 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+static inline void
+  osEE_sn_release
+(
+  OsEE_SN * * pp_first,
+  OsEE_SN * p_to_free
+)
+{
+  p_to_free->p_next = (*pp_first);
+  (*pp_first) = p_to_free;
+}
+# 145 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+OsEE_bool
+  osEE_sn_priority_insert
+(
+  OsEE_SN * * pp_first,
+  OsEE_SN * p_sn_new,
+  OsEE_bool const as_ready
+);
+# 213 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_scheduler_types.h"
+typedef OsEE_SN * OsEE_RQ;
+# 64 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_api.h" 2
+# 64 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2
+
+
+
+# 1 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee_avr8_irq.h" 1
+# 68 "C:\\Users\\gabri\\OneDrive\\Desktop\\OS4ES_~1\\lab1.1\\erika\\inc/ee.h" 2

@@ -1,0 +1,581 @@
+!SESSION 2020-10-09 19:57:46.577 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+This is a continuation of log file C:\Users\gabri\OneDrive\Desktop\OS4ES_EclipseWorkspace\.metadata\.bak_0.log
+Created Time: 2020-10-09 19:58:00.579
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:00.735
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.arduino.core.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:00.937
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:01.182
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:01.197
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:01.282
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-09 19:58:01.488
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gabri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-09 19:58:01.944
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-10-09 19:58:04.740
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 19:58:59.444
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 1.98 sec: 1,521 declarations; 7,839 references; 19 unresolved inclusions; 90 syntax errors; 208 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 19:59:56.157
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.947 sec: 1,521 declarations; 7,840 references; 19 unresolved inclusions; 90 syntax errors; 208 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:00:33.781
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.901 sec: 1,521 declarations; 7,838 references; 19 unresolved inclusions; 90 syntax errors; 206 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:01:24.651
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 1.03 sec: 1,521 declarations; 7,839 references; 19 unresolved inclusions; 90 syntax errors; 206 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:01:39.963
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.934 sec: 1,521 declarations; 7,839 references; 19 unresolved inclusions; 90 syntax errors; 206 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:02:58.979
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.914 sec: 1,521 declarations; 7,846 references; 19 unresolved inclusions; 90 syntax errors; 197 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:03:07.620
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.97 sec: 1,521 declarations; 7,846 references; 19 unresolved inclusions; 90 syntax errors; 197 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:04:19.194
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.798 sec: 1,511 declarations; 7,841 references; 19 unresolved inclusions; 90 syntax errors; 193 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:05:53.284
+!MESSAGE Indexed 'lab1.1' (5 sources, 4 headers) in 0.147 sec: 141 declarations; 97 references; 13 unresolved inclusions; 46 syntax errors; 76 unresolved names (24%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:06:04.097
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.624 sec: 1,511 declarations; 7,840 references; 19 unresolved inclusions; 90 syntax errors; 193 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:06:42.721
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.62 sec: 1,511 declarations; 7,840 references; 19 unresolved inclusions; 90 syntax errors; 193 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:07:18.736
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.672 sec: 1,511 declarations; 7,838 references; 19 unresolved inclusions; 90 syntax errors; 191 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:08:24.573
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.539 sec: 1,511 declarations; 7,834 references; 19 unresolved inclusions; 90 syntax errors; 191 unresolved names (2%)
+
+!ENTRY org.eclipse.ui 4 0 2020-10-09 20:09:41.213
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:346)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:110)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:191)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:202)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:250)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:3972)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3528)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:58)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:80)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:54)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:147)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:810)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1219)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:200)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 64 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:10:12.993
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.524 sec: 1,511 declarations; 7,836 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:10:47.002
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.69 sec: 1,509 declarations; 7,806 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:10:54.822
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.638 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:11:05.737
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.611 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:11:46.314
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.629 sec: 1,511 declarations; 7,833 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:12:30.023
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.527 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:12:38.897
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.573 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 190 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:14:33.396
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.643 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 192 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:15:16.148
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.662 sec: 1,511 declarations; 7,835 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:17:01.653
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.522 sec: 1,511 declarations; 7,837 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:18:50.594
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.623 sec: 1,511 declarations; 7,837 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:19:50.594
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.594 sec: 1,511 declarations; 7,831 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:21:13.631
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.606 sec: 1,511 declarations; 7,831 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:21:32.860
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.683 sec: 1,511 declarations; 7,831 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:22:15.822
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.651 sec: 1,511 declarations; 7,831 references; 19 unresolved inclusions; 90 syntax errors; 192 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:23:33.187
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.708 sec: 1,511 declarations; 7,829 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:24:37.154
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.613 sec: 1,511 declarations; 7,829 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:25:31.431
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.598 sec: 1,511 declarations; 7,829 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:26:32.995
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.588 sec: 1,511 declarations; 7,832 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:28:57.514
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.626 sec: 1,511 declarations; 7,829 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:29:07.739
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.494 sec: 1,511 declarations; 7,829 references; 19 unresolved inclusions; 90 syntax errors; 194 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:30:05.977
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.656 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:30:55.716
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.664 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:31:06.604
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.688 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:31:38.991
+!MESSAGE Indexed 'lab1.1' (5 sources, 4 headers) in 0.077 sec: 141 declarations; 91 references; 13 unresolved inclusions; 46 syntax errors; 79 unresolved names (25%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:31:48.699
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.643 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:31:54.246
+!MESSAGE Indexed 'lab1.1' (22 sources, 61 headers) in 0.686 sec: 1,527 declarations; 7,847 references; 19 unresolved inclusions; 90 syntax errors; 205 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:32:38.800
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.581 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:32:48.106
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.657 sec: 1,511 declarations; 7,827 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:33:52.331
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.49 sec: 1,509 declarations; 7,819 references; 19 unresolved inclusions; 90 syntax errors; 189 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:34:27.962
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.579 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 189 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:35:09.051
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.504 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:35:34.084
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.622 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:36:00.451
+!MESSAGE Indexed 'lab1.1' (5 sources, 4 headers) in 0.079 sec: 138 declarations; 85 references; 13 unresolved inclusions; 43 syntax errors; 74 unresolved names (25%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:36:43.723
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.507 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:37:04.956
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.688 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:37:15.231
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.585 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:37:44.923
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.652 sec: 1,508 declarations; 7,814 references; 19 unresolved inclusions; 90 syntax errors; 183 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:38:43.135
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.626 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 184 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:39:17.700
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.564 sec: 1,508 declarations; 7,815 references; 19 unresolved inclusions; 90 syntax errors; 184 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:40:00.006
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.638 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:40:26.700
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.502 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:40:42.062
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.577 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:41:02.573
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.575 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:41:11.138
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.607 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:41:46.300
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.518 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:41:55.709
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.671 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 185 unresolved names (1.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:42:31.944
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.614 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 189 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:43:26.226
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.552 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 191 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:45:01.551
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.481 sec: 1,509 declarations; 7,818 references; 19 unresolved inclusions; 90 syntax errors; 208 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:45:51.032
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.609 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 193 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:45:59.126
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.57 sec: 1,508 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 193 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:46:38.997
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.638 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 192 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:46:47.148
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.646 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 192 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:47:25.684
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.64 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 192 unresolved names (2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:48:12.097
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.594 sec: 1,509 declarations; 7,818 references; 19 unresolved inclusions; 90 syntax errors; 199 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:48:54.873
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.693 sec: 1,509 declarations; 7,818 references; 19 unresolved inclusions; 90 syntax errors; 199 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:50:05.171
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.64 sec: 1,509 declarations; 7,822 references; 19 unresolved inclusions; 90 syntax errors; 206 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:50:43.561
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.512 sec: 1,509 declarations; 7,818 references; 19 unresolved inclusions; 90 syntax errors; 196 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-09 20:51:50.845
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.619 sec: 1,509 declarations; 7,818 references; 19 unresolved inclusions; 90 syntax errors; 199 unresolved names (2.1%)
+!SESSION 2020-10-10 10:46:16.486 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 2 0 2020-10-10 10:46:28.047
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-10 10:46:28.047
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.core 2 0 2020-10-10 10:46:28.953
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.470
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.arduino.core.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.646
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.654
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.670
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.678
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-10-10 10:46:48.686
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-10 10:46:49.718
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gabri'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-10-10 10:46:54.812
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:47:37.009
+!MESSAGE Indexed 'lab1.1' (5 sources, 4 headers) in 0.52 sec: 139 declarations; 87 references; 13 unresolved inclusions; 47 syntax errors; 82 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:47:53.468
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 1.61 sec: 1,509 declarations; 7,817 references; 19 unresolved inclusions; 90 syntax errors; 199 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:49:09.522
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.926 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:49:40.144
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.92 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:49:58.358
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.818 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:50:39.598
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 1.02 sec: 1,509 declarations; 7,817 references; 19 unresolved inclusions; 90 syntax errors; 201 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:51:38.407
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.717 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 198 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:53:01.913
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.649 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 206 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:55:00.114
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.588 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 203 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:55:51.221
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.73 sec: 1,509 declarations; 7,816 references; 19 unresolved inclusions; 90 syntax errors; 202 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 10:58:39.673
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.662 sec: 1,510 declarations; 7,817 references; 20 unresolved inclusions; 90 syntax errors; 204 unresolved names (2.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:05:03.679
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.999 sec: 1,512 declarations; 7,821 references; 20 unresolved inclusions; 90 syntax errors; 212 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:05:08.659
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.652 sec: 1,512 declarations; 7,821 references; 20 unresolved inclusions; 90 syntax errors; 212 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:08:39.071
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.701 sec: 1,511 declarations; 7,835 references; 20 unresolved inclusions; 90 syntax errors; 220 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:19:09.383
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.641 sec: 1,515 declarations; 7,839 references; 20 unresolved inclusions; 90 syntax errors; 220 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:19:21.245
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.727 sec: 1,515 declarations; 7,839 references; 20 unresolved inclusions; 90 syntax errors; 220 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:19:30.407
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.712 sec: 1,515 declarations; 7,839 references; 20 unresolved inclusions; 90 syntax errors; 220 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:22:31.843
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.782 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:22:43.061
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.725 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:23:28.354
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.618 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:24:39.074
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.614 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:28:38.350
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.692 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:28:50.350
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.54 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:28:57.748
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.689 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:29:40.767
+!MESSAGE Indexed 'lab1.1' (22 sources, 57 headers) in 0.785 sec: 1,513 declarations; 7,840 references; 20 unresolved inclusions; 90 syntax errors; 218 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-10-10 11:30:36.033
+!MESSAGE Indexed 'lab1.1' (21 sources, 56 headers) in 0.705 sec: 1,496 declarations; 7,830 references; 18 unresolved inclusions; 90 syntax errors; 209 unresolved names (2.2%)

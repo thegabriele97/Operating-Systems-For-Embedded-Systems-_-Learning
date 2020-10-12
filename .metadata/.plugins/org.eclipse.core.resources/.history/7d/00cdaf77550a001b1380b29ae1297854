@@ -1,0 +1,35 @@
+#include "HelpfulSerial.h"
+
+HelpfulSerial::HelpfulSerial(int baud_rate) {
+	this->baud_rate = baud_rate;
+}
+
+uint8_t HelpfulSerial::begin() {
+
+	if (this->is_started) {
+		return -1;
+	}
+
+	Serial.begin(this->baud_rate);
+
+	return 0;
+}
+
+void HelpfulSerial::print(String str) {
+	Serial.print(str);
+	this->flush_serial();
+}
+
+void HelpfulSerial::println(String str) {
+	this->print(str + "\rn");
+}
+
+template<class T> void HelpfulSerial::write(T value) {
+	this->print(String(value));
+}
+
+void HelpfulSerial::flush_serial(void) {
+	if (serialEventRun) {
+		serialEventRun();
+	}
+}

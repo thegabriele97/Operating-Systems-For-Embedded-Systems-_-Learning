@@ -1,0 +1,16 @@
+10:56:45 **** Build of configuration Default for project Test1 ****
+make upload 
+avrdude.exe: stk500_recv(): programmer is not responding
+avrdude.exe: stk500_getsync() attempt 1 of 10: not in sync: resp=0x6b
+avrdude.exe: stk500_recv(): programmer is not responding
+avrdude.exe: stk500_getsync() attempt 2 of 10: not in sync: resp=0x6b
+avrdude.exe: stk500_recv(): programmer is not responding
+avrdude.exe: stk500_getsync() attempt 3 of 10: not in sync: resp=0x6b
+avrdude.exe: stk500_recv(): programmer is not responding
+avrdude.exe: stk500_getsync() attempt 4 of 10: not in sync: resp=0x6b
+avrdude.exe: stk500_recv(): programmer is not responding
+avrdude.exe: stk500_getsync() attempt 5 of 10: not in sync: resp=0x6b
+Command canceled
+
+10:57:41 Build Cancelled. (took 55s.602ms)
+

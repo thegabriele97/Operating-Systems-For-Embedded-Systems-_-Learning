@@ -1,0 +1,48 @@
+#include "ee.h"
+#include "Arduino.h"
+#include "HelpfulSerial.h"
+
+static void *serial;
+
+void loop(void) {
+	/*ActivateTask(TaskL1);*/
+}
+
+void idle_hook(void) {
+	loop();
+	if (serialEventRun)
+		serialEventRun();
+}
+
+void setup(void) {
+
+	//Serial.begin(9600);
+
+	/*Serial.println("ciao");
+	if (serialEventRun)
+			serialEventRun();*/
+
+	serial = new HelpfulSerial(9600);
+	OBJ_PTR(serial)->begin();
+	OBJ_PTR(serial)->println("Ciao");
+
+	pinMode(13, OUTPUT);
+	digitalWrite(13, LOW);
+}
+
+int main(void) {
+
+	init();
+
+	setup();
+
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+
+	StartOS(OSDEFAULTAPPMODE);
+
+	return 0;
+
+}
+

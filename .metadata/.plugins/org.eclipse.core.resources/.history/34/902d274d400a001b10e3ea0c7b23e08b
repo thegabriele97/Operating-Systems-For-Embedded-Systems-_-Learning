@@ -1,0 +1,11 @@
+#include "ee.h"
+#include "Arduino.h"
+#include "HelpfulSerial.h"
+
+extern HelpfulSerial *serial;
+
+void StartupHook() {
+
+	serial->println("StartupHook: I am here!!!");
+
+}

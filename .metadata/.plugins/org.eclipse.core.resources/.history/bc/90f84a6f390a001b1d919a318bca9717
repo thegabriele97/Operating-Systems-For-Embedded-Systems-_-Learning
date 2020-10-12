@@ -1,0 +1,6 @@
+#include "HelpfulSerial.h"
+
+HelpfulSerial::HelpfulSerial(int baud_rate) {
+	this->baud_rate = baud_rate;
+}
+

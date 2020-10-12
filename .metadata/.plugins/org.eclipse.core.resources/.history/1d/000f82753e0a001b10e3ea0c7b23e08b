@@ -1,0 +1,31 @@
+#ifndef HELPFULSERIAL_H_
+#define HELPFULSERIAL_H_
+
+#include "stdint.h"
+#include "Arduino.h"
+#include "ee.h"
+#include "stdio"
+
+using namespace std;
+
+class HelpfulSerial {
+
+private:
+	int baud_rate;
+	bool is_started = false;
+
+public:
+	HelpfulSerial(int baud_rate);
+	uint8_t begin();
+
+	void print(char *str);
+	void println(std::string str);
+	template<class T> void write(T value);
+
+protected:
+	void flush_serial(void);
+
+
+};
+
+#endif /* HELPFULSERIAL_H_ */

@@ -1,0 +1,16 @@
+#include "HelpfulSerial.h"
+
+HelpfulSerial::HelpfulSerial(int baud_rate) {
+	this->baud_rate = baud_rate;
+}
+
+HelpfulSerial::begin() {
+
+	if (this->is_started) {
+		return -1;
+	}
+
+	Serial.begin(this->baud_rate);
+
+	return 0;
+}

@@ -1,0 +1,7 @@
+#ifndef MYARDUINO_H_
+#define MYARDUINO_H_
+
+#define MASK(n) (1<<n)
+
+
+#endif /* MYARDUINO_H_ */

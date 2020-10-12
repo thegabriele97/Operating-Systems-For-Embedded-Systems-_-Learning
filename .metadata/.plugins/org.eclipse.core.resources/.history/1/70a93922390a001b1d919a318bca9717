@@ -1,0 +1,16 @@
+/*
+ * HelpfulSerial.h
+ *
+ *  Created on: 9 Oct 2020
+ *      Author: gabri
+ */
+
+#ifndef HELPFULSERIAL_H_
+#define HELPFULSERIAL_H_
+
+class HelpfulSerial {
+public:
+	HelpfulSerial();
+};
+
+#endif /* HELPFULSERIAL_H_ */

@@ -1,0 +1,8 @@
+#include "ee.h"
+#include "Arduino.h"
+
+void StartupHook() {
+
+
+
+}

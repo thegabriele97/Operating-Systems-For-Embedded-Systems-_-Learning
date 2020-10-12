@@ -1,0 +1,17 @@
+#ifndef HELPFULSERIAL_H_
+#define HELPFULSERIAL_H_
+
+class HelpfulSerial {
+
+private:
+	static int baud_rate;
+
+public:
+	HelpfulSerial();
+	void print(char *str);
+	void println(char *str);
+	template<class T> void write(T value);
+
+};
+
+#endif /* HELPFULSERIAL_H_ */

@@ -1,0 +1,29 @@
+11:00:16 **** Build of configuration Default for project yrdy2 ****
+make upload 
+
+avrdude.exe: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude.exe: Device signature = 0x1e950f (probably m328p)
+avrdude.exe: reading input file "arduino.hex"
+avrdude.exe: writing flash (4116 bytes):
+
+Writing | ################################################## | 100% 1.21s
+
+avrdude.exe: 4116 bytes of flash written
+avrdude.exe: verifying flash memory against arduino.hex:
+avrdude.exe: load data flash data from input file arduino.hex:
+avrdude.exe: input file arduino.hex contains 4116 bytes
+avrdude.exe: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.89s
+
+avrdude.exe: verifying ...
+avrdude.exe: 4116 bytes of flash verified
+
+avrdude.exe done.  Thank you.
+
+
+11:00:21 Build Finished. 0 errors, 0 warnings. (took 4s.540ms)
+

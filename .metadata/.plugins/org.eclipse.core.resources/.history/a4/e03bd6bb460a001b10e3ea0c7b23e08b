@@ -1,0 +1,14 @@
+#include "ee.h"
+#include "Arduino.h"
+#include "HelpfulSerial.h"
+#include "MyArduino.h"
+
+extern HelpfulSerial *serial;
+
+void StartupHook() {
+
+	serial->println("hook.cpp: Hello!!! I'am StartupHook and I am here!!!");
+
+	DDRD |= (MASK(3) | MASK(7));
+
+}

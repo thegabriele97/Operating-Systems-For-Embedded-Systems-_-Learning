@@ -1,0 +1,1478 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                              obj/code.cpp.o (init)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                              obj/code.cpp.o (pinMode)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                              obj/code.cpp.o (_ZN14HardwareSerial5beginEmh)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                              obj/code.cpp.o (Serial)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+                              obj/code.cpp.o (_ZN5Print5writeEPKhj)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o) (yield)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__cxa_pure_virtual)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+                              obj/code.cpp.o (OsEE_atmega_startTimer1)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+                              obj/code.cpp.o (WaitSem)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                              obj/code.cpp.o (StartOS)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                              obj/ee_applcfg.c.o (osEE_idle_hook_wrapper)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o) (osEE_sn_priority_insert)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_task_activated)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_scheduler_task_activated)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o) (osEE_change_context_from_running)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_atmega_intvect)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o) (osEE_hal_save_ctx_and_restore_ctx)
+C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o) (osEE_avr8_isr2_stub)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__subsf3)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__ltsf2)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__divsf3)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__fixunssfsi)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__floatunsisf)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__gtsf2)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__mulsf3)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o) (__unordsf2)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o) (__udivmodsi4)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                              obj/code.cpp.o (__do_copy_data)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                              obj/code.cpp.o (__do_clear_bss)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o) (__do_global_ctors)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+                              C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o) (abort)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                              obj/code.cpp.o (sprintf)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (vfprintf)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (__prologue_saves__)
+d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+                              d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+osEE_kcb_var        0x1               obj/ee_applcfg.c.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 obj/code.cpp.o
+ .data          0x00000000        0x0 obj/code.cpp.o
+ .bss           0x00000000        0x0 obj/code.cpp.o
+ .rodata._Z8print_sphPv.str1.1
+                0x00000000       0x11 obj/code.cpp.o
+ .text._Z8print_sphPv
+                0x00000000       0x38 obj/code.cpp.o
+ .data._ZZ8print_sphPvE3msg
+                0x00000000       0x16 obj/code.cpp.o
+ .bss.task5_sp  0x00000000        0x2 obj/code.cpp.o
+ .bss.task4_sp  0x00000000        0x2 obj/code.cpp.o
+ .bss.task3_sp  0x00000000        0x2 obj/code.cpp.o
+ .bss.isr2_fired
+                0x00000000        0x1 obj/code.cpp.o
+ .bss.old_sp    0x00000000        0x2 obj/code.cpp.o
+ .bss.isr_cnt   0x00000000        0x2 obj/code.cpp.o
+ .bss.stk_wrong
+                0x00000000        0x1 obj/code.cpp.o
+ .text          0x00000000        0x0 obj/ee_applcfg.c.o
+ .data          0x00000000        0x0 obj/ee_applcfg.c.o
+ .bss           0x00000000        0x0 obj/ee_applcfg.c.o
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.millis   0x00000000       0x18 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.micros   0x00000000       0x4a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.delay    0x00000000       0x72 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text.delayMicroseconds
+                0x00000000       0x16 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .text.digitalRead
+                0x00000000       0x52 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0xa C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .group         0x00000000        0x8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text._ZN14HardwareSerial3endEv
+                0x00000000       0x44 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .group         0x00000000        0x8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .group         0x00000000        0x8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .group         0x00000000        0x8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x6 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5writeEPKc.part.2
+                0x00000000       0x1e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEPK19__FlashStringHelper
+                0x00000000       0x48 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printERK6String
+                0x00000000       0x1c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEPKc
+                0x00000000       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEc
+                0x00000000        0xe C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printERK9Printable
+                0x00000000       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZN5Print7printlnEv.str1.1
+                0x00000000        0x3 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEv
+                0x00000000        0x8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEPK19__FlashStringHelper
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEPKc
+                0x00000000       0x2e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK9Printable
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print11printNumberEmh
+                0x00000000       0x98 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEli
+                0x00000000       0x90 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEii
+                0x00000000        0xe C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEmi
+                0x00000000       0x1a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0xe C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEji
+                0x00000000        0xc C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZN5Print10printFloatEdh.str1.1
+                0x00000000        0xc C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print10printFloatEdh
+                0x00000000      0x1c8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .rodata._ZTV5Print
+                0x00000000        0xc C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .text.__empty  0x00000000        0x2 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_info    0x00000000       0x3e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_abbrev  0x00000000       0x2a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_ranges  0x00000000       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_line    0x00000000       0x88 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_str     0x00000000      0x101 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .comment       0x00000000       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .debug_frame   0x00000000       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(hooks.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text.__cxa_pure_virtual
+                0x00000000        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text.__cxa_deleted_virtual
+                0x00000000        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_info    0x00000000       0xc1 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_abbrev  0x00000000       0xa4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_ranges  0x00000000       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_line    0x00000000      0x140 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_str     0x00000000      0x1d8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .comment       0x00000000       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .debug_frame   0x00000000       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(abi.cpp.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.DisableAllInterrupts
+                0x00000000       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.EnableAllInterrupts
+                0x00000000       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SuspendAllInterrupts
+                0x00000000       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ResumeAllInterrupts
+                0x00000000       0x1c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SuspendOSInterrupts
+                0x00000000       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ResumeOSInterrupts
+                0x00000000       0x1c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetActiveApplicationMode
+                0x00000000       0x18 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ChainTask
+                0x00000000       0xb0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.TerminateTask
+                0x00000000       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.Schedule
+                0x00000000       0x4c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ShutdownOS
+                0x00000000       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetTaskID
+                0x00000000       0x58 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetTaskState
+                0x00000000       0x7e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.WaitEvent
+                0x00000000       0x76 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.SetEvent
+                0x00000000       0x76 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetEvent
+                0x00000000       0x4e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.ClearEvent
+                0x00000000       0x32 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text.GetISRID
+                0x00000000       0x1e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .text.osEE_task_event_set_mask
+                0x00000000       0x3a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .text.osEE_scheduler_task_insert
+                0x00000000       0x4e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .avr.prop      0x00000000       0x3a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .text          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .data          0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .bss           0x00000000        0x0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .text.osEE_avr8_isr1_stub
+                0x00000000       0x42 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xcc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xdc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text.avr-libc.fplib
+                0x00000000       0x5e d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text.avr-libc.fplib
+                0x00000000       0x7a d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text.avr-libc.fplib
+                0x00000000       0x48 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text.avr-libc.fplib
+                0x00000000        0xc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text.avr-libc.fplib
+                0x00000000        0x6 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text.avr-libc.fplib
+                0x00000000       0x22 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text.avr-libc.fplib
+                0x00000000       0x44 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xd2 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text.avr-libc
+                0x00000000        0xa d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .text.avr-libc
+                0x00000000       0x46 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .comment       0x00000000       0x12 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text.avr-libc
+                0x00000000      0x3b4 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .comment       0x00000000       0x12 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text.avr-libc
+                0x00000000       0x16 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text.avr-libc
+                0x00000000       0x16 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text.avr-libc
+                0x00000000       0x60 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .comment       0x00000000       0x12 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .text.avr-libc
+                0x00000000       0xbc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.prologue
+                0x00000000       0x38 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_line    0x00000000       0xfe d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_info    0x00000000       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_abbrev  0x00000000       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .debug_aranges
+                0x00000000       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.prologue
+                0x00000000       0x36 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_line    0x00000000       0xf8 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_info    0x00000000       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_abbrev  0x00000000       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+ .debug_aranges
+                0x00000000       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD obj/code.cpp.o
+LOAD obj/ee_applcfg.c.o
+START GROUP
+LOAD C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a
+LOAD C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a
+END GROUP
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libc.a
+LOAD d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x14f6
+ *(.vectors)
+ .vectors       0x00000000       0x68 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x00000068       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000068                digital_pin_to_timer_PGM
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x0000007c       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x0000007c                digital_pin_to_bit_mask_PGM
+ .progmem.data.digital_pin_to_port_PGM
+                0x00000090       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000090                digital_pin_to_port_PGM
+ .progmem.data.port_to_output_PGM
+                0x000000a4        0xa C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x000000a4                port_to_output_PGM
+ .progmem.data.port_to_mode_PGM
+                0x000000ae        0xa C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x000000ae                port_to_mode_PGM
+                0x000000b8                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000b8                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000b8        0x2 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x000000ba                __ctors_end = .
+                0x000000ba                __dtors_start = .
+ *(.dtors)
+                0x000000ba                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000ba        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x000000ba                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000ba        0xc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000c6       0x16 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+                0x000000c6                __do_copy_data
+ .init4         0x000000dc       0x10 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000dc                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x000000ec       0x16 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+                0x000000ec                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000102        0x8 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x0000010a        0x4 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000010a                __vector_22
+                0x0000010a                __vector_1
+                0x0000010a                __vector_24
+                0x0000010a                __vector_12
+                0x0000010a                __bad_interrupt
+                0x0000010a                __vector_6
+                0x0000010a                __vector_3
+                0x0000010a                __vector_23
+                0x0000010a                __vector_25
+                0x0000010a                __vector_13
+                0x0000010a                __vector_17
+                0x0000010a                __vector_7
+                0x0000010a                __vector_5
+                0x0000010a                __vector_4
+                0x0000010a                __vector_9
+                0x0000010a                __vector_2
+                0x0000010a                __vector_21
+                0x0000010a                __vector_15
+                0x0000010a                __vector_8
+                0x0000010a                __vector_14
+                0x0000010a                __vector_10
+                0x0000010a                __vector_20
+ *fill*         0x0000010e        0x2 
+ .text          0x00000110       0xe4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+                0x00000110                osEE_hal_save_ctx_and_restore_ctx
+                0x00000150                osEE_hal_restore_ctx
+                0x00000190                osEE_hal_ready2stacked
+                0x000001a0                osEE_hal_save_ctx_and_ready2stacked
+                0x000001e0                osEE_hal_terminate_ctx
+                0x000001f4                . = ALIGN (0x2)
+ *(.text.*)
+ .text.StartupHook
+                0x000001f4        0xc obj/code.cpp.o
+                0x000001f4                StartupHook
+ .text.clock_handler
+                0x00000200       0x38 obj/code.cpp.o
+                0x00000200                clock_handler
+ .text.setup    0x00000238       0x1c obj/code.cpp.o
+                0x00000238                setup
+ .text.startup.main
+                0x00000254       0x14 obj/code.cpp.o
+                0x00000254                main
+ .text._Z12serial_printPKc
+                0x00000268       0x2c obj/code.cpp.o
+                0x00000268                _Z12serial_printPKc
+ .text.idle_hook
+                0x00000294       0x82 obj/code.cpp.o
+                0x00000294                idle_hook
+ .text.FuncTask1
+                0x00000316       0xc6 obj/code.cpp.o
+                0x00000316                FuncTask1
+ .text.FuncTask2
+                0x000003dc       0x7c obj/code.cpp.o
+                0x000003dc                FuncTask2
+ .text.FuncTask3
+                0x00000458       0x24 obj/code.cpp.o
+                0x00000458                FuncTask3
+ .text.FuncTask4
+                0x0000047c       0x18 obj/code.cpp.o
+                0x0000047c                FuncTask4
+ .text.FuncTask5
+                0x00000494       0x14 obj/code.cpp.o
+                0x00000494                FuncTask5
+ .text.__vector_16
+                0x000004a8       0x94 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x000004a8                __vector_16
+ .text.init     0x0000053c       0x76 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x0000053c                init
+ .text.turnOffPWM
+                0x000005b2       0x52 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .text.pinMode  0x00000604       0x78 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x00000604                pinMode
+ .text.digitalWrite
+                0x0000067c       0x5c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                0x0000067c                digitalWrite
+ .text._ZN14HardwareSerial9availableEv
+                0x000006d8       0x18 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000006d8                _ZN14HardwareSerial9availableEv
+ .text._ZN14HardwareSerial4peekEv
+                0x000006f0       0x1c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000006f0                _ZN14HardwareSerial4peekEv
+ .text._ZN14HardwareSerial4readEv
+                0x0000070c       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000070c                _ZN14HardwareSerial4readEv
+ .text._ZN14HardwareSerial17availableForWriteEv
+                0x00000734       0x1e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00000734                _ZN14HardwareSerial17availableForWriteEv
+ .text._Z14serialEventRunv
+                0x00000752       0x1c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x00000752                _Z14serialEventRunv
+ .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x0000076e       0x44 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000076e                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+ .text._ZN14HardwareSerial5flushEv
+                0x000007b2       0x40 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000007b2                _ZN14HardwareSerial5flushEv
+ .text._ZN14HardwareSerial5writeEh
+                0x000007f2       0x9a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x000007f2                _ZN14HardwareSerial5writeEh
+ .text._ZN14HardwareSerial5beginEmh
+                0x0000088c       0xc4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x0000088c                _ZN14HardwareSerial5beginEmh
+ .text.__vector_18
+                0x00000950       0x64 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x00000950                __vector_18
+ .text.__vector_19
+                0x000009b4       0x4c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x000009b4                __vector_19
+ .text._Z17Serial0_availablev
+                0x00000a00       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x00000a00                _Z17Serial0_availablev
+ .text.startup._GLOBAL__sub_I___vector_18
+                0x00000a14       0x5a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .text._ZN5Print5writeEPKhj
+                0x00000a6e       0x5a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+                0x00000a6e                _ZN5Print5writeEPKhj
+ .text.OsEE_atmega_startTimer1
+                0x00000ac8       0xbc C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+                0x00000ac8                OsEE_atmega_startTimer1
+ .text.WaitSem  0x00000b84       0x98 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+                0x00000b84                WaitSem
+ .text.PostSem  0x00000c1c       0x4a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+                0x00000c1c                PostSem
+ .text.StartOS  0x00000c66      0x142 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x00000c66                StartOS
+ .text.ActivateTask
+                0x00000da8       0x6a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x00000da8                ActivateTask
+ .text.osEE_scheduler_task_wrapper_restore
+                0x00000e12       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x00000e12                osEE_scheduler_task_wrapper_restore
+ .text.osEE_scheduler_task_wrapper_run
+                0x00000e24       0x4c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x00000e24                osEE_scheduler_task_wrapper_run
+ .text.osEE_idle_hook_wrapper
+                0x00000e70       0x4e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x00000e70                osEE_idle_hook_wrapper
+ .text.osEE_scheduler_core_rq_preempt_stk
+                0x00000ebe       0xae C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00000ebe                osEE_scheduler_core_rq_preempt_stk
+ .text.osEE_sn_priority_insert
+                0x00000f6c       0x74 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00000f6c                osEE_sn_priority_insert
+ .text.osEE_scheduler_rq_insert
+                0x00000fe0        0xe C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00000fe0                osEE_scheduler_rq_insert
+ .text.osEE_scheduler_core_pop_running
+                0x00000fee       0x54 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x00000fee                osEE_scheduler_core_pop_running
+ .text.osEE_task_activated
+                0x00001042       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x00001042                osEE_task_activated
+ .text.osEE_task_end
+                0x00001066       0x2a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x00001066                osEE_task_end
+ .text.osEE_activate_isr2
+                0x00001090       0x30 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x00001090                osEE_activate_isr2
+ .text.osEE_scheduler_task_activated
+                0x000010c0       0xb0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x000010c0                osEE_scheduler_task_activated
+ .text.osEE_scheduler_task_block_current
+                0x00001170       0x4e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x00001170                osEE_scheduler_task_block_current
+ .text.osEE_scheduler_task_unblocked
+                0x000011be       0x60 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x000011be                osEE_scheduler_task_unblocked
+ .text.osEE_scheduler_task_terminated
+                0x0000121e       0xd8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x0000121e                osEE_scheduler_task_terminated
+ .text.osEE_scheduler_task_preemption_point
+                0x000012f6       0x36 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x000012f6                osEE_scheduler_task_preemption_point
+ .text.osEE_scheduler_task_set_running
+                0x0000132c       0x70 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x0000132c                osEE_scheduler_task_set_running
+ .text.osEE_change_context_from_running
+                0x0000139c       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x0000139c                osEE_change_context_from_running
+ .text.osEE_change_context_from_task_end
+                0x000013c4       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x000013c4                osEE_change_context_from_task_end
+ .text.osEE_idle_task_terminate
+                0x000013e8       0x36 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x000013e8                osEE_idle_task_terminate
+ .text.osEE_scheduler_task_end
+                0x0000141e       0x2c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x0000141e                osEE_scheduler_task_end
+ .text.__vector_default
+                0x0000144a        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x0000144a                tag___vector_default
+                0x0000144a                __vector_default
+ .text.osEE_atmega_intvect
+                0x0000144e        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x0000144e                osEE_atmega_intvect
+ .text.__vector_11
+                0x00001452       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                0x00001452                tag___vector_11
+                0x00001452                __vector_11
+ .text.osEE_avr8_isr2_stub
+                0x00001462       0x40 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+                0x00001462                osEE_avr8_isr2_stub
+ .text.libgcc.div
+                0x000014a2       0x44 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x000014a2                __udivmodsi4
+ .text.libgcc   0x000014e6        0xc d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x000014e6                __tablejump2__
+                0x000014f2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000014f2        0x0 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+                0x000014f2                _exit
+                0x000014f2                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000014f2        0x4 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000014f6                _etext = .
+
+.data           0x00800100      0x1bc load address 0x000014f6
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.led      0x00800100        0x2 obj/code.cpp.o
+                0x00800100                led
+ .data.osEE_ccb_var
+                0x00800102       0x12 obj/ee_applcfg.c.o
+                0x00800102                osEE_ccb_var
+ .data.osEE_sn_array
+                0x00800114       0x18 obj/ee_applcfg.c.o
+ .data.osEE_tcb_array
+                0x0080012c       0x46 obj/ee_applcfg.c.o
+ .data.osEE_scb_array
+                0x00800172        0x6 obj/ee_applcfg.c.o
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.idle_hook.str1.1
+                0x00800178       0x1c obj/code.cpp.o
+ .rodata.FuncTask1.str1.1
+                0x00800194       0x48 obj/code.cpp.o
+                                 0x50 (size before relaxing)
+ .rodata.FuncTask2.str1.1
+                0x008001dc       0x24 obj/code.cpp.o
+ .rodata.FuncTask3.str1.1
+                0x00800200        0x8 obj/code.cpp.o
+ .rodata.FuncTask4.str1.1
+                0x00800208        0x8 obj/code.cpp.o
+ .rodata.FuncTask5.str1.1
+                0x00800210        0x8 obj/code.cpp.o
+ .rodata.osEE_kdb_var
+                0x00800218        0x6 obj/ee_applcfg.c.o
+                0x00800218                osEE_kdb_var
+ .rodata.osEE_cdb_var
+                0x0080021e        0xa obj/ee_applcfg.c.o
+                0x0080021e                osEE_cdb_var
+ .rodata.osEE_autostart_tdb_array
+                0x00800228        0x4 obj/ee_applcfg.c.o
+ .rodata.osEE_tdb_ptr_autostart_OSDEFAULTAPPMODE
+                0x0080022c        0x2 obj/ee_applcfg.c.o
+ .rodata.osEE_tdb_ptr_array
+                0x0080022e        0xe obj/ee_applcfg.c.o
+ .rodata.osEE_tdb_array
+                0x0080023c       0x62 obj/ee_applcfg.c.o
+ .rodata.osEE_sdb_array
+                0x0080029e        0xc obj/ee_applcfg.c.o
+ .rodata._ZTV14HardwareSerial
+                0x008002aa       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                0x008002aa                _ZTV14HardwareSerial
+ *(.gnu.linkonce.r*)
+                0x008002bc                . = ALIGN (0x2)
+                0x008002bc                _edata = .
+                0x008002bc                PROVIDE (__data_end, .)
+
+.bss            0x008002bc      0x1bb
+                0x008002bc                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.main_sp   0x008002bc        0x2 obj/code.cpp.o
+                0x008002bc                main_sp
+ .bss.task2_sp  0x008002be        0x2 obj/code.cpp.o
+                0x008002be                task2_sp
+ .bss.task1_sp  0x008002c0        0x2 obj/code.cpp.o
+                0x008002c0                task1_sp
+ .bss.isr2_armed
+                0x008002c2        0x1 obj/code.cpp.o
+                0x008002c2                isr2_armed
+ .bss.task5_fired
+                0x008002c3        0x1 obj/code.cpp.o
+                0x008002c3                task5_fired
+ .bss.task4_fired
+                0x008002c4        0x1 obj/code.cpp.o
+                0x008002c4                task4_fired
+ .bss.task3_ended
+                0x008002c5        0x1 obj/code.cpp.o
+                0x008002c5                task3_ended
+ .bss.task3_fired
+                0x008002c6        0x1 obj/code.cpp.o
+                0x008002c6                task3_fired
+ .bss.task2_ended
+                0x008002c7        0x1 obj/code.cpp.o
+                0x008002c7                task2_ended
+ .bss.task1_ended
+                0x008002c8        0x1 obj/code.cpp.o
+                0x008002c8                task1_ended
+ .bss.task2_fired
+                0x008002c9        0x1 obj/code.cpp.o
+                0x008002c9                task2_fired
+ .bss.task1_fired
+                0x008002ca        0x1 obj/code.cpp.o
+                0x008002ca                task1_fired
+ .bss.led_val   0x008002cb        0x2 obj/code.cpp.o
+                0x008002cb                led_val
+ .bss.osEE_task_stack_2
+                0x008002cd       0x80 obj/ee_applcfg.c.o
+ .bss.osEE_task_stack_1
+                0x0080034d       0x80 obj/ee_applcfg.c.o
+ .bss.V         0x008003cd        0x3 obj/ee_applcfg.c.o
+                0x008003cd                V
+ .bss.timer0_fract
+                0x008003d0        0x1 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .bss.timer0_millis
+                0x008003d1        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x008003d1                timer0_millis
+ .bss.timer0_overflow_count
+                0x008003d5        0x4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                0x008003d5                timer0_overflow_count
+ .bss.Serial    0x008003d9       0x9d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                0x008003d9                Serial
+ *(COMMON)
+ COMMON         0x00800476        0x1 obj/ee_applcfg.c.o
+                0x00800476                osEE_kcb_var
+                0x00800477                PROVIDE (__bss_end, .)
+                0x000014f6                __data_load_start = LOADADDR (.data)
+                0x000016b2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800477        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800477                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 obj/code.cpp.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000011       0x12 obj/ee_applcfg.c.o
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .comment       0x00000011       0x12 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x580
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_aranges
+                0x00000048       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_aranges
+                0x00000080       0x68 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_aranges
+                0x000000e8       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_aranges
+                0x00000120      0x100 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_aranges
+                0x00000220       0x20 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_aranges
+                0x00000240       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_aranges
+                0x00000268       0xb8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_aranges
+                0x00000320       0x30 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_aranges
+                0x00000350       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_aranges
+                0x00000388       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_aranges
+                0x000003c0       0x50 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_aranges
+                0x00000410       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_aranges
+                0x00000448       0x30 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_aranges
+                0x00000478       0x20 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .debug_aranges
+                0x00000498       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .debug_aranges
+                0x000004c0       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x000004e0       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000500       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000520       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000540       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_aranges
+                0x00000560       0x20 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x1037f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x44d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_info    0x00000a41      0x712 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_info    0x00001153     0x206d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_info    0x000031c0     0x1ca8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_info    0x00004e68     0x2bbb C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_info    0x00007a23      0x84e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_info    0x00008271      0xc41 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_info    0x00008eb2     0x2091 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_info    0x0000af43      0xd26 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_info    0x0000bc69      0xc2d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_info    0x0000c896      0x981 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_info    0x0000d217     0x1084 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_info    0x0000e29b      0xae6 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_info    0x0000ed81      0x863 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_info    0x0000f5e4       0xa0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .debug_info    0x0000f684      0x899 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .debug_info    0x0000ff1d       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000ffd8       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x00010093       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x0001014e       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x00010209       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x000102c4       0xbb d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_abbrev   0x00000000     0x3174
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x1e3 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_abbrev  0x00000785      0x1fa C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_abbrev  0x0000097f      0x52a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_abbrev  0x00000ea9      0x44e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_abbrev  0x000012f7      0x562 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_abbrev  0x00001859      0x158 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_abbrev  0x000019b1      0x2af C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_abbrev  0x00001c60      0x44c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_abbrev  0x000020ac      0x308 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_abbrev  0x000023b4      0x2a2 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_abbrev  0x00002656      0x1ea C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_abbrev  0x00002840      0x309 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_abbrev  0x00002b49      0x284 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_abbrev  0x00002dcd      0x17d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_abbrev  0x00002f4a       0x14 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .debug_abbrev  0x00002f5e      0x19e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .debug_abbrev  0x000030fc       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00003110       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00003124       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00003138       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000314c       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_abbrev  0x00003160       0x14 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_line     0x00000000     0x3e07
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000001a      0x375 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_line    0x0000038f      0x3bf C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_line    0x0000074e      0x5b4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_line    0x00000d02      0x2d8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_line    0x00000fda      0x6d8 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_line    0x000016b2      0x220 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_line    0x000018d2      0x2c3 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_line    0x00001b95      0xa06 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_line    0x0000259b      0x2ef C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_line    0x0000288a      0x35c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_line    0x00002be6      0x269 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_line    0x00002e4f      0x4a0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_line    0x000032ef      0x284 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_line    0x00003573      0x1ed C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_line    0x00003760       0xf2 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_asm.S.o)
+ .debug_line    0x00003852      0x207 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+ .debug_line    0x00003a59      0x122 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x00003b7b       0x62 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x00003bdd       0x98 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x00003c75       0x86 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x00003cfb       0x92 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x00003d8d       0x7a d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/avr5\libgcc.a(_tablejump2.o)
+
+.debug_frame    0x00000000      0xd04
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xc4 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_frame   0x000000c4       0x7c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_frame   0x00000140      0x110 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_frame   0x00000250       0xc0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_frame   0x00000310      0x3cc C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_frame   0x000006dc       0x24 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_frame   0x00000700       0x70 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_frame   0x00000770      0x254 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_frame   0x000009c4       0x58 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_frame   0x00000a1c       0x94 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_frame   0x00000ab0       0x54 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_frame   0x00000b04      0x124 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_frame   0x00000c28       0x64 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_frame   0x00000c8c       0x44 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_frame   0x00000cd0       0x34 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+
+.debug_str      0x00000000     0x360a
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 d:/downloads/arduino-pr-beta1.9-build-119/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x2a5 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+                                0x2f0 (size before relaxing)
+ .debug_str     0x000004ad       0xa7 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+                                0x2c9 (size before relaxing)
+ .debug_str     0x00000554     0x1499 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+                               0x16c7 (size before relaxing)
+ .debug_str     0x000019ed      0x151 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+                               0x1502 (size before relaxing)
+ .debug_str     0x00001b3e      0x41b C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+                               0x12fe (size before relaxing)
+ .debug_str     0x00001f59      0x71d C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+                                0x88d (size before relaxing)
+ .debug_str     0x00002676      0x259 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+                                0xa4b (size before relaxing)
+ .debug_str     0x000028cf      0x67e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                               0x1113 (size before relaxing)
+ .debug_str     0x00002f4d      0x11c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                                0xd12 (size before relaxing)
+ .debug_str     0x00003069      0x17c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                                0x9f3 (size before relaxing)
+ .debug_str     0x000031e5       0xab C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+                                0x901 (size before relaxing)
+ .debug_str     0x00003290      0x176 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                                0xb93 (size before relaxing)
+ .debug_str     0x00003406      0x115 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+                                0x998 (size before relaxing)
+ .debug_str     0x0000351b       0x91 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+                                0x877 (size before relaxing)
+ .debug_str     0x000035ac       0x5e C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+                                0x88b (size before relaxing)
+
+.debug_loc      0x00000000     0x520e
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x282 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_loc     0x00000282      0x658 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_loc     0x000008da      0x47c C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_loc     0x00000d56      0x18a C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_loc     0x00000ee0     0x1cde C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_loc     0x00002bbe      0x163 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_loc     0x00002d21      0x269 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_loc     0x00002f8a      0xb37 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_loc     0x00003ac1      0x102 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_loc     0x00003bc3      0x6ea C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_loc     0x000042ad      0x135 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_loc     0x000043e2      0xa95 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_loc     0x00004e77      0x350 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_loc     0x000051c7       0x47 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x5f0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring.c.o)
+ .debug_ranges  0x00000038       0x40 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(wiring_digital.c.o)
+ .debug_ranges  0x00000078       0x70 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial.cpp.o)
+ .debug_ranges  0x000000e8       0x40 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(HardwareSerial0.cpp.o)
+ .debug_ranges  0x00000128      0x138 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libarduinosdk.a(Print.cpp.o)
+ .debug_ranges  0x00000260       0x10 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_timer1ctc.c.o)
+ .debug_ranges  0x00000270       0x48 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_extension.c.o)
+ .debug_ranges  0x000002b8      0x1b0 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_ranges  0x00000468       0x38 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_ranges  0x000004a0       0x58 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_ranges  0x000004f8       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_ranges  0x00000520       0x70 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_ranges  0x00000590       0x28 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_ranges  0x000005b8       0x20 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_atmega_intvect.c.o)
+ .debug_ranges  0x000005d8       0x18 C:\Users\gabri\OneDrive\Desktop\OS4ES_~1\test\erika\lib\libee.a(ee_avr8_irqstub.c.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(arduino.elf elf32-avr)
+LOAD linker stubs

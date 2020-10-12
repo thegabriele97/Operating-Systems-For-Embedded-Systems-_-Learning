@@ -1,0 +1,9 @@
+#ifndef MYARDUINO_H_
+#define MYARDUINO_H_
+
+#define BUFSIZ 128		//Used for temporary string buffer
+
+#define MASK(n) (1<<n)
+
+
+#endif /* MYARDUINO_H_ */

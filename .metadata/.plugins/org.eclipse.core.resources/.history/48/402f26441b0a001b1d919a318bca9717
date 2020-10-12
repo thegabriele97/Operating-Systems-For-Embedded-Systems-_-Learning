@@ -1,0 +1,50 @@
+/* ERIKA Enterprise. */
+#include "ee.h"
+
+/* Arduino SDK. */
+#include "Arduino.h"
+
+void loop(void) {
+	/*ActivateTask(TaskL1);*/
+}
+
+void idle_hook(void) {
+	loop();
+	if (serialEventRun)
+		serialEventRun();
+}
+
+void setup(void) {
+
+	pinMode(13, OUTPUT);
+	digitalWrite(13, LOW);
+
+	digitalWrite(13, HIGH);
+	delay(1000);
+
+	digitalWrite(13, LOW);
+	delay(1000);
+
+	digitalWrite(13, HIGH);
+	delay(500);
+
+	digitalWrite(13, LOW);
+	delay(500);
+}
+
+int main(void) {
+
+	init();
+
+	setup();
+
+#if defined(USBCON)
+	USBDevice.attach();
+#endif
+
+	StartOS(OSDEFAULTAPPMODE);
+
+	return 0;
+
+}
+
