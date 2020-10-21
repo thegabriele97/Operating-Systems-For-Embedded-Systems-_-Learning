@@ -1,0 +1,104 @@
+CPU mySystem {
+
+  OS myOs {
+    EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
+    EE_OPT = "OS_EE_BUILD_DEBUG";
+
+    USERESSCHEDULER = FALSE;
+
+    CPU_DATA = AVR8 {
+      MULTI_STACK = TRUE;
+      IDLEHOOK = TRUE {
+        HOOKNAME = "idle_hook";
+      };
+    };
+
+    MCU_DATA = MEGA {
+      MODEL = MEGA_328p;
+    };
+
+/*
+    USEDYNAMICAPI = TRUE {
+      TASK_ARRAY_SIZE		= 6;
+      SN_ARRAY_SIZE		= 6;
+      STACKS_MEMORY_SIZE	= 128;
+    };
+*/
+
+    LIB = ARDUINO {
+      /* Used to select Board: UNO or NANO */
+      SDK_BOARD = UNO;
+      /* Used to select vendor: CC or ORG */
+      VARIANT = CC {
+        VERSION = "1.8.5";
+      };
+      /* Create libarduino.a */
+      STAND_ALONE = TRUE;
+    };
+
+    KERNEL_TYPE = OSEK {
+      CLASS = ECC1;
+    };
+    
+    STARTUPHOOK = TRUE;
+    ERRORHOOK = TRUE;
+
+  };
+
+  	APPDATA myApp {
+    	APP_SRC  = "code.cpp";
+		APP_SRC  = "task.cpp";
+		APP_SRC  = "MyArduino.cpp";
+		APP_SRC  = "hooks.cpp";
+ 	};
+ 	
+ 	RESOURCE RES_GlobalCountVar {
+ 		RESOURCEPROPERTY = STANDARD;
+ 	};
+
+	TASK Task1 {
+		PRIORITY = 0x1;
+	    AUTOSTART = FALSE;
+ 		RESOURCE = RES_GlobalCountVar;
+	};
+	
+	TASK Task2 {
+		PRIORITY = 0x1;
+		AUTOSTART = FALSE;
+ 		RESOURCE = RES_GlobalCountVar;
+	};
+	
+	COUNTER SystemCounter {
+		MINCYCLE = 1;
+		TICKSPERBASE = 1;
+		MAXALLOWEDVALUE = 65535;
+		TYPE = HARDWARE {
+			DEVICE = "TIMER1_COMPA";
+			SYSTEM_TIMER  = TRUE;
+		};
+		SECONDSPERTICK = 0.001;
+	};
+	
+	ALARM Alarm1 {
+		COUNTER = SystemCounter;
+		AUTOSTART = TRUE {
+			CYCLETIME = 1000;
+			ALARMTIME = 1;
+		};
+		ACTION = ACTIVATETASK {
+			TASK = Task1;
+		};
+	};
+
+	ALARM Alarm2 {
+		COUNTER = SystemCounter;
+		AUTOSTART = TRUE {
+			CYCLETIME = 2000;
+			ALARMTIME = 1;
+		};
+		ACTION = ACTIVATETASK {
+			TASK = Task2;
+		};
+	};
+
+};

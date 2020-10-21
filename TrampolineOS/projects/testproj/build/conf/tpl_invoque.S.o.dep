@@ -1,0 +1,20 @@
+build/conf/tpl_invoque.S.o: conf/tpl_invoque.S \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_define.h \
+ ../../trampoline/os/tpl_config_def.h \
+ ../../trampoline/os/tpl_config_check.h conf/tpl_service_ids.h \
+ ../../trampoline/machines/avr/tpl_assembler.h \
+ ../../trampoline/os/tpl_as_memmap.h
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_config_def.h:
+
+../../trampoline/os/tpl_config_check.h:
+
+conf/tpl_service_ids.h:
+
+../../trampoline/machines/avr/tpl_assembler.h:
+
+../../trampoline/os/tpl_as_memmap.h:

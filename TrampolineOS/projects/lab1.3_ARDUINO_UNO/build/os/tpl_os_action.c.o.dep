@@ -1,0 +1,63 @@
+build/os/tpl_os_action.c.o: ../../trampoline/os/tpl_os_action.c \
+ ../../trampoline/os/tpl_os_definitions.h \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_define.h \
+ ../../trampoline/os/tpl_config_def.h \
+ ../../trampoline/os/tpl_config_check.h \
+ ../../trampoline/os/tpl_os_task_kernel.h \
+ ../../trampoline/os/tpl_os_kernel.h ../../trampoline/os/tpl_compiler.h \
+ ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/machines/avr/tpl_os_std_types.h \
+ ../../trampoline/os/tpl_os_custom_types.h conf/tpl_app_custom_types.h \
+ ../../trampoline/os/tpl_compiler.h \
+ ../../trampoline/machines/avr/tpl_machine.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/os/tpl_os_multicore_macros.h \
+ ../../trampoline/os/tpl_memmap.h \
+ ../../trampoline/os/tpl_os_event_kernel.h \
+ ../../trampoline/os/tpl_os_types.h ../../trampoline/os/tpl_os_action.h \
+ ../../trampoline/os/tpl_os_error.h \
+ ../../trampoline/os/tpl_os_errorhook.h
+
+../../trampoline/os/tpl_os_definitions.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_config_def.h:
+
+../../trampoline/os/tpl_config_check.h:
+
+../../trampoline/os/tpl_os_task_kernel.h:
+
+../../trampoline/os/tpl_os_kernel.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/machines/avr/tpl_os_std_types.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+conf/tpl_app_custom_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/machines/avr/tpl_machine.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/os/tpl_os_multicore_macros.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+../../trampoline/os/tpl_os_event_kernel.h:
+
+../../trampoline/os/tpl_os_types.h:
+
+../../trampoline/os/tpl_os_action.h:
+
+../../trampoline/os/tpl_os_error.h:
+
+../../trampoline/os/tpl_os_errorhook.h:
