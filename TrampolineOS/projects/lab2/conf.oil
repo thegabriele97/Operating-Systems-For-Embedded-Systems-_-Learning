@@ -1,0 +1,76 @@
+OIL_VERSION = "2.5" : "test" ;
+
+CPU test {    
+	OS config {
+		STATUS = STANDARD;
+		BUILD = TRUE {
+			TRAMPOLINE_BASE_PATH = "../../trampoline";
+			APP_NAME = "lab2";
+			APP_SRC = "code.cpp";
+			APP_SRC = "task.cpp";
+			APP_SRC = "morse_cod.cpp";
+			CPPCOMPILER = "avr-g++";
+			COMPILER = "avr-gcc";
+			LINKER = "avr-gcc";
+			ASSEMBLER = "avr-gcc";
+			COPIER = "avr-objcopy";
+			SYSTEM = PYTHON;
+
+			LIBRARY = serial;
+		};
+
+		SYSTEM_CALL = TRUE;
+		
+		//STARTUPHOOK = TRUE;
+		//ERRORHOOK = TRUE;
+	};
+
+  	APPMODE stdAppmode {};
+
+	EVENT SymbolTimingEvt {
+		MASK = 0x2;
+	};
+
+	TASK CallingTask {
+		PRIORITY = 0x2;
+	    AUTOSTART = FALSE;
+		SCHEDULE = FULL;
+		ACTIVATION = 1;
+		STACKSIZE = 256;
+	};
+
+	TASK SOSTask {
+		PRIORITY = 0x1;
+	    AUTOSTART = FALSE;
+		SCHEDULE = FULL;
+		ACTIVATION = 1;
+		STACKSIZE = 256;
+		EVENT = SymbolTimingEvt;
+	};
+	
+	ALARM SymbolTiming {
+		COUNTER = SystemCounter;
+		AUTOSTART = TRUE {
+			CYCLETIME = 100;
+			ALARMTIME = 100;
+			APPMODE = stdAppmode;
+		};
+		ACTION = SETEVENT {
+			EVENT = SymbolTimingEvt;
+			TASK = SOSTask;
+		};
+	};
+
+	ALARM ProducerPeriodicActivation {
+		COUNTER = SystemCounter;
+		AUTOSTART = TRUE {
+			CYCLETIME = 3000;
+			ALARMTIME = 1000;
+			APPMODE = stdAppmode;
+		};
+		ACTION = ACTIVATETASK {
+			TASK = CallingTask;
+		};
+	};
+
+};

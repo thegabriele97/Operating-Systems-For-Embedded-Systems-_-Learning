@@ -1,0 +1,110 @@
+build/com/tpl_com_message_kernel.c.o: \
+ ../../trampoline/com/tpl_com_message_kernel.c \
+ ../../trampoline/com/tpl_com_message_kernel.h \
+ ../../trampoline/com/tpl_com_types.h \
+ ../../trampoline/machines/avr/tpl_os_std_types.h \
+ ../../trampoline/os/tpl_compiler.h conf/tpl_app_define.h \
+ ../../trampoline/os/tpl_config_def.h \
+ ../../trampoline/os/tpl_config_check.h \
+ ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_custom_types.h \
+ ../../trampoline/machines/avr/tpl_machine.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/os/tpl_compiler.h ../../trampoline/os/tpl_memmap.h \
+ ../../trampoline/com/tpl_com_internal.h \
+ ../../trampoline/os/tpl_os_types.h \
+ ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/os/tpl_os_error.h ../../trampoline/os/tpl_os_types.h \
+ ../../trampoline/os/tpl_memmap.h ../../trampoline/com/tpl_com_error.h \
+ ../../trampoline/com/tpl_com_definitions.h \
+ ../../trampoline/com/tpl_com_private_types.h \
+ ../../trampoline/com/tpl_com_base_mo.h \
+ ../../trampoline/os/tpl_os_action.h \
+ ../../trampoline/os/tpl_os_task_kernel.h \
+ ../../trampoline/os/tpl_os_kernel.h \
+ ../../trampoline/os/tpl_os_multicore_macros.h \
+ ../../trampoline/com/tpl_com_filtering.h \
+ ../../trampoline/com/tpl_com_app_def.h \
+ ../../trampoline/com/tpl_com_errorhook.h \
+ ../../trampoline/os/tpl_os_definitions.h \
+ ../../trampoline/com/tpl_com_internal_com.h \
+ ../../trampoline/com/tpl_com_mo.h ../../trampoline/com/tpl_com_queue.h \
+ ../../trampoline/com/tpl_com_buffer.h \
+ ../../trampoline/com/tpl_com_net_messages.h
+
+../../trampoline/com/tpl_com_message_kernel.h:
+
+../../trampoline/com/tpl_com_types.h:
+
+../../trampoline/machines/avr/tpl_os_std_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_config_def.h:
+
+../../trampoline/os/tpl_config_check.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_custom_types.h:
+
+../../trampoline/machines/avr/tpl_machine.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+../../trampoline/com/tpl_com_internal.h:
+
+../../trampoline/os/tpl_os_types.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/os/tpl_os_error.h:
+
+../../trampoline/os/tpl_os_types.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+../../trampoline/com/tpl_com_error.h:
+
+../../trampoline/com/tpl_com_definitions.h:
+
+../../trampoline/com/tpl_com_private_types.h:
+
+../../trampoline/com/tpl_com_base_mo.h:
+
+../../trampoline/os/tpl_os_action.h:
+
+../../trampoline/os/tpl_os_task_kernel.h:
+
+../../trampoline/os/tpl_os_kernel.h:
+
+../../trampoline/os/tpl_os_multicore_macros.h:
+
+../../trampoline/com/tpl_com_filtering.h:
+
+../../trampoline/com/tpl_com_app_def.h:
+
+../../trampoline/com/tpl_com_errorhook.h:
+
+../../trampoline/os/tpl_os_definitions.h:
+
+../../trampoline/com/tpl_com_internal_com.h:
+
+../../trampoline/com/tpl_com_mo.h:
+
+../../trampoline/com/tpl_com_queue.h:
+
+../../trampoline/com/tpl_com_buffer.h:
+
+../../trampoline/com/tpl_com_net_messages.h:

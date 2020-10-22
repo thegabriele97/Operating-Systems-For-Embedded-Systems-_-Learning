@@ -1,0 +1,95 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "CallingTask"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 1000,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 3000
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "ProducerPeriodicActivation"
+    },    
+    {
+      "ACTION" : "SETEVENT",
+      "ACTION_S" : 
+      {
+        "EVENT" : "SymbolTimingEvt",
+        "TASK" : "SOSTask"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 100,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 100
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "SymbolTiming"
+    }
+  ],
+  "event" : 
+  [
+    
+    {
+      "MASK" : 2,
+      "NAME" : "SymbolTimingEvt"
+    }
+  ],
+  "isr" : [],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "false",
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "SymbolTimingEvt"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "SOSTask",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "false",
+      "KIND" : "Task",
+      "NAME" : "CallingTask",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}
