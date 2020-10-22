@@ -32,19 +32,7 @@
         "EVENT" : "SymbolTimingEvt",
         "TASK" : "SOSTask"
       },
-      "AUTOSTART" : "true",
-      "AUTOSTART_S" : 
-      {
-        "ALARMTIME" : 100,
-        "APPMODE" : 
-        [
-          
-          {
-            "VALUE" : "stdAppmode"
-          }
-        ],
-        "CYCLETIME" : 100
-      },
+      "AUTOSTART" : "false",
       "COUNTER" : "SystemCounter",
       "NAME" : "SymbolTiming"
     }

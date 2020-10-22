@@ -25,6 +25,8 @@ TASK(SOSTask) {
 	uint8_t i, j;
 	char *str = "SOS";
 
+	SetRelAlarm(SymbolTiming, 100, 100);					  //starting the alarm for symbols timing sync
+
 	for (i = 0; i < strlen(str); i++) {
 		
 		Serial.print(str[i]);
@@ -38,6 +40,7 @@ TASK(SOSTask) {
 	sendMultipleBits(0, 4);									  //sending pause between messages
 	Serial.println();
 
+	CancelAlarm(SymbolTiming);								  //stopping the sync alarm
 	TerminateTask();
 };
 

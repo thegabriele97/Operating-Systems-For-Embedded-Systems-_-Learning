@@ -8,7 +8,6 @@ CPU test {
 			APP_NAME = "lab2";
 			APP_SRC = "code.cpp";
 			APP_SRC = "task.cpp";
-			APP_SRC = "morse_cod.cpp";
 			CPPCOMPILER = "avr-g++";
 			COMPILER = "avr-gcc";
 			LINKER = "avr-gcc";
@@ -50,11 +49,7 @@ CPU test {
 	
 	ALARM SymbolTiming {
 		COUNTER = SystemCounter;
-		AUTOSTART = TRUE {
-			CYCLETIME = 100;
-			ALARMTIME = 100;
-			APPMODE = stdAppmode;
-		};
+		AUTOSTART = FALSE;
 		ACTION = SETEVENT {
 			EVENT = SymbolTimingEvt;
 			TASK = SOSTask;
