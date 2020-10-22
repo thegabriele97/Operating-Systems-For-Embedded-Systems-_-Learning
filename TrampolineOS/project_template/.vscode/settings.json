@@ -5,6 +5,7 @@
         "/usr/lib/gcc/avr/**",
         "/usr/lib/avr/**",
         "${workspaceFolder}/../../trampoline/os/**",
+        "${workspaceFolder}/../../trampoline/com/**",
         "${workspaceFolder}/conf/**"
     ]
 }
