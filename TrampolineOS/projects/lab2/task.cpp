@@ -42,7 +42,7 @@ TASK(SOSTask) {
 	sendMultipleBits(0, 4);									  	//sending pause between messages
 	Serial.println();
 
-	CancelAlarm(SymbolTiming);								  //stopping the sync alarm
+	CancelAlarm(SymbolTiming);								  	//stopping the sync alarm
 	TerminateTask();
 };
 
