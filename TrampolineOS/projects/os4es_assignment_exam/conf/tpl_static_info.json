@@ -1,0 +1,103 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "SETEVENT",
+      "ACTION_S" : 
+      {
+        "EVENT" : "EVTBitTiming",
+        "TASK" : "TaskSender"
+      },
+      "AUTOSTART" : "false",
+      "COUNTER" : "SystemCounter",
+      "NAME" : "ALARMBitTiming"
+    },    
+    {
+      "ACTION" : "SETEVENT",
+      "ACTION_S" : 
+      {
+        "EVENT" : "EVTMsgPause",
+        "TASK" : "TaskTwitterer"
+      },
+      "AUTOSTART" : "false",
+      "COUNTER" : "SystemCounter",
+      "NAME" : "ALARMMsgPause"
+    }
+  ],
+  "event" : 
+  [
+    
+    {
+      "MASK" : 1,
+      "NAME" : "EVTBitTiming"
+    },    
+    {
+      "MASK" : 2,
+      "NAME" : "EVTMsgPause"
+    },    
+    {
+      "MASK" : 4,
+      "NAME" : "EVTMsgSendCompleted"
+    }
+  ],
+  "isr" : [],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "false",
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "EVTBitTiming"
+        },        
+        {
+          "VALUE" : "EVTMsgSendCompleted"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "TaskSender",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "EVTMsgPause"
+        },        
+        {
+          "VALUE" : "EVTMsgSendCompleted"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "TaskTwitterer",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}
