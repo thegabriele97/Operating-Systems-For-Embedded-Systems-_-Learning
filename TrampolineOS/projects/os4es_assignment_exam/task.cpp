@@ -48,9 +48,9 @@ TASK(TaskTwitterer) {
 
 			ClearEvent(EVTMsgSendCompleted);
 			total_time = millis() - start;
+			time_accumulator += total_time;
 
 		#ifdef SERIAL_DBG
-			time_accumulator += total_time;
 			Serial.print(" - Elapsed time: ");
 			Serial.print(total_time);
 			Serial.print(" - Accumulator: ");
