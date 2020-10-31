@@ -37,7 +37,7 @@ CPU test {
 	};
 
 	TASK TaskTwitterer {
-		PRIORITY = 0x2;
+		PRIORITY = 0x1;
 	    AUTOSTART = TRUE {
 			APPMODE = stdAppmode;
 		};
@@ -49,9 +49,11 @@ CPU test {
 	};
 
 	TASK TaskSender {
-		PRIORITY = 0x1;
-	    AUTOSTART = FALSE;
-		SCHEDULE = FULL;
+		PRIORITY = 0x2;
+	    AUTOSTART = TRUE {
+			APPMODE = stdAppmode;
+		};
+		SCHEDULE = NON;
 		ACTIVATION = 1;
 		STACKSIZE = 256;
 		EVENT = EVTBitTiming;

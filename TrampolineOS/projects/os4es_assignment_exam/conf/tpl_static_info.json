@@ -43,31 +43,27 @@
     }
   ],
   "isr" : [],
-  "resource" : [],
-  "task" : 
+  "resource" : 
   [
     
     {
-      "ACTIVATION" : 1,
-      "AUTOSTART" : "false",
-      "EVENT" : 
+      "ISRUSAGE" : [],
+      "KIND" : "Resource",
+      "NAME" : "INTERNAL_RES_SCHEDULER",
+      "PRIORITY" : 3,
+      "RESOURCEPROPERTY" : "INTERNAL",
+      "TASKUSAGE" : 
       [
         
         {
-          "VALUE" : "EVTBitTiming"
-        },        
-        {
-          "VALUE" : "EVTMsgSendCompleted"
+          "VALUE" : "TaskSender"
         }
-      ],
-      "KIND" : "Task",
-      "NAME" : "TaskSender",
-      "NONPREEMPTABLE" : "false",
-      "PRIORITY" : 1,
-      "SCHEDULE" : "FULL",
-      "STACKSIZE" : 256,
-      "USEINTERNALRESOURCE" : "false"
-    },    
+      ]
+    }
+  ],
+  "task" : 
+  [
+    
     {
       "ACTIVATION" : 1,
       "AUTOSTART" : "true",
@@ -94,8 +90,46 @@
       "KIND" : "Task",
       "NAME" : "TaskTwitterer",
       "NONPREEMPTABLE" : "false",
-      "PRIORITY" : 2,
+      "PRIORITY" : 1,
       "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "EVTBitTiming"
+        },        
+        {
+          "VALUE" : "EVTMsgSendCompleted"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "TaskSender",
+      "NONPREEMPTABLE" : "true",
+      "PRIORITY" : 2,
+      "RESOURCE" : 
+      [
+        
+        {
+          "VALUE" : "INTERNAL_RES_SCHEDULER"
+        }
+      ],
+      "SCHEDULE" : "NON",
       "STACKSIZE" : 256,
       "USEINTERNALRESOURCE" : "false"
     }

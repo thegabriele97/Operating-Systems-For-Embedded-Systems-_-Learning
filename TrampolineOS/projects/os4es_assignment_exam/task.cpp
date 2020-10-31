@@ -4,14 +4,19 @@
 #include "comm_fnct.h"
 
 /** MACRO & CONSTS **/
-#define PREDEF_MSGS_ARRAY_LEN 		0x005
-#define MORSE_CODING_BUFFER_LEN 	0x004
-#define BIT_TIMING_MSG				0x064
+#define PREDEF_MSGS_ARRAY_LEN 		0x0005
+#define MORSE_CODING_BUFFER_LEN 	0x0004
+#define BIT_TIMING_MS				0x0064
+#define INTERMESSAGE_PAUSE_MS		0x01f4
+#define MAX_MSG_LENGTH_MS			0x7530
 
 #define SEND_MULTIPLE_BITS_WEVENTS(bits, pin, times) 			 \
-	SetRelAlarm(ALARMBitTiming, BIT_TIMING_MSG, BIT_TIMING_MSG); \
+	SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);   \
 	send_multiple_bits(bits, pin, times);						 \
 	CancelAlarm(ALARMBitTiming);								 \
+
+#define SEND_INTERWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, 4)
+#define SEND_INTERCODEWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, 3);
 
 extern uint8_t MORSE_LED;
 static char *PREDEF_MSGS[PREDEF_MSGS_ARRAY_LEN] = {
@@ -19,7 +24,7 @@ static char *PREDEF_MSGS[PREDEF_MSGS_ARRAY_LEN] = {
 	"A SHORT PENCIL IS USUALLY BETTER THAN A LONG MEMORY ANY DAY",
 	"ACCEPT SOMETHING THAT YOU CANNOT CHANGE AND YOU WILL FEEL BETTER",
 	"ADVENTURE CAN BE REAL HAPPINESS",
-	"n ALL THE EFFORT YOU ARE MAKING WILL ULTIMATELY PAY OFF"
+	"ALL THE EFFORT YOU ARE MAKING WILL ULTIMATELY PAY OFF"
 };
 
 /** GLOBAL VARS	 **/
@@ -32,19 +37,34 @@ TASK(TaskTwitterer) {
 		time_accumulator = 0;
 
 		do {
+		#ifdef SERIAL_DBG
+			Serial.print("Msg: ");
+			Serial.print(msg_index);
+		#endif
+
 			start = millis();
 			ActivateTask(TaskSender);
+			WaitEvent(EVTMsgSendCompleted);
+
+			ClearEvent(EVTMsgSendCompleted);
 			total_time = millis() - start;
 
+		#ifdef SERIAL_DBG
 			time_accumulator += total_time;
+			Serial.print(" - Elapsed time: ");
+			Serial.print(total_time);
+			Serial.print(" - Accumulator: ");
+			Serial.println(time_accumulator);
+		#endif
 
-		} while (time_accumulator + total_time <= 30);
+		} while (time_accumulator + total_time <= MAX_MSG_LENGTH_MS);
 
-		SetRelAlarm(ALARMMsgPause, 500, 500);
+		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, INTERMESSAGE_PAUSE_MS);
 		msg_index = (msg_index + 1) % PREDEF_MSGS_ARRAY_LEN;
 		WaitEvent(EVTMsgPause);
+		
+		CancelAlarm(ALARMMsgPause);
 		ClearEvent(EVTMsgPause);
-
 	} while(true);
 
 	TerminateTask();
@@ -58,31 +78,23 @@ TASK(TaskSender) {
 	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; *msg_ch_ptr; msg_ch_ptr++) {
 
 		if (*msg_ch_ptr == ' ') {
-			SEND_MULTIPLE_BITS_WEVENTS(0x00, MORSE_LED, 4);
-			
-			digitalWrite(13, digitalRead(13) ^ 1);
+			SEND_INTERWORD_PAUSE(MORSE_LED);
 			continue;
 		}
 		
 		char2morse(*msg_ch_ptr, coded_char_buff);
-		Serial.print(*msg_ch_ptr);
-		Serial.print(": ");
-		Serial.print((uint32_t)*((uint32_t *)coded_char_buff), HEX);
-		Serial.print("   :   ");
-		
 		for (i = 0; i < MORSE_CODING_BUFFER_LEN && coded_char_buff[i] != NILL; i++) {
-			Serial.print(coded_char_buff[i], BIN);
-			Serial.print(" - ");
-			
-			SetRelAlarm(ALARMBitTiming, BIT_TIMING_MSG, BIT_TIMING_MSG);
+			SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
 			send_bits(coded_char_buff[i], MORSE_LED);
 			send_bits(0x00, MORSE_LED);
 			CancelAlarm(ALARMBitTiming);
 		}
 
-		Serial.println("P");
-		SEND_MULTIPLE_BITS_WEVENTS(0x00, MORSE_LED, 3);
+		SEND_INTERCODEWORD_PAUSE(MORSE_LED);
 	}
+
+	SEND_INTERWORD_PAUSE(MORSE_LED);
+	SetEvent(TaskTwitterer, EVTMsgSendCompleted);
 
 	TerminateTask();
 };
