@@ -7,12 +7,8 @@
 uint8_t MORSE_LED = 0x7;
 
 void setup() {
-
 	Serial.begin(SERIAL_BAUDRATE);
 
 	pinMode(MORSE_LED, OUTPUT);
 	digitalWrite(MORSE_LED, LOW);
-
-	pinMode(13, OUTPUT);
-	digitalWrite(13, HIGH);
 }
