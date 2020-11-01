@@ -24,6 +24,16 @@
       "AUTOSTART" : "false",
       "COUNTER" : "SystemCounter",
       "NAME" : "ALARMMsgPause"
+    },    
+    {
+      "ACTION" : "ALARMCALLBACK",
+      "ACTION_S" : 
+      {
+        "ALARMCALLBACKNAME" : "ALARMStopDisplay"
+      },
+      "AUTOSTART" : "false",
+      "COUNTER" : "SystemCounter",
+      "NAME" : "ALARMStopDisplay"
     }
   ],
   "event" : 

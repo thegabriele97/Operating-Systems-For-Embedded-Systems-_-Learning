@@ -20,7 +20,7 @@ baudrate="57600"
 hexname=$(shell find -name "*.hex")
 upload:
 	@echo "Uploading to arduino $(proc) on $(port) @ $(baudrate)"
-	avrdude -c arduino -p $(proc) -P $(port) -b $(baudrate) -U flash:w:$(hexname)
+	avrdude -v -c arduino -p $(proc) -P $(port) -b $(baudrate) -U flash:w:$(hexname)
 	@echo "Done."
 
 clean:

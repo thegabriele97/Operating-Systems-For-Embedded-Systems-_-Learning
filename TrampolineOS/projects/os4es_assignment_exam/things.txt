@@ -1,0 +1,1 @@
+make upload port=/dev/ttyS4 baudrate=115200 proc=atmega328p
