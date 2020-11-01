@@ -43,7 +43,7 @@ TASK(TaskTwitterer) {
 
 	do {
 		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, MAX_MSG_LENGTH_MS);
-		is_time_expired = true;
+		is_time_expired = false;
 
 		do {
 			Serial.print("Sending msg #");
@@ -57,7 +57,7 @@ TASK(TaskTwitterer) {
 			Serial.print(" - Elapsed: ");
 			Serial.println(total_time);
 
-		} while (ClearEvent(EVTMsgSendCompleted), is_time_expired);
+		} while (ClearEvent(EVTMsgSendCompleted), !is_time_expired);
 
 		CancelAlarm(ALARMStopDisplay);
 		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, INTERMESSAGE_PAUSE_MS);
@@ -76,7 +76,7 @@ TASK(TaskSender) {
 	uint8_t i;
 	char *msg_ch_ptr;
 
-	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
+	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; !is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
 
 		if (*msg_ch_ptr == ' ') {
 			SEND_INTERWORD_PAUSE(MORSE_LED);
@@ -84,17 +84,17 @@ TASK(TaskSender) {
 		}
 		
 		char2morse(*msg_ch_ptr, coded_char_buff);
-		for (i = 0; i < MORSE_CODING_BUFFER_LEN && coded_char_buff[i] != NILL && is_time_expired; i++) {
+		for (i = 0; i < MORSE_CODING_BUFFER_LEN && coded_char_buff[i] != NILL && !is_time_expired; i++) {
 			SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
 			send_bits(coded_char_buff[i], MORSE_LED);
-			ACTION_WVALID_FLAG(is_time_expired, send_bits(0x00, MORSE_LED));
+			ACTION_WVALID_FLAG(!is_time_expired, send_bits(0x00, MORSE_LED));
 			CancelAlarm(ALARMBitTiming);
 		}
 
-		ACTION_WVALID_FLAG(is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
+		ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
 	}
 
-	ACTION_WVALID_FLAG(is_time_expired, SEND_INTERWORD_PAUSE(MORSE_LED));
+	ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERWORD_PAUSE(MORSE_LED));
 	SetEvent(TaskTwitterer, EVTMsgSendCompleted);
 
 	TerminateTask();
