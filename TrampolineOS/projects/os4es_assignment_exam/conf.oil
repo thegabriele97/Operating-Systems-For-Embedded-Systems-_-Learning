@@ -45,20 +45,26 @@ CPU test {
 		SCHEDULE = FULL;
 		ACTIVATION = 1;
 		STACKSIZE = 256;
-		EVENT = EVTMsgPause;
 		EVENT = EVTMsgSendCompleted;
 	};
 
 	TASK TaskSender {
 		PRIORITY = 0x2;
-	    AUTOSTART = TRUE {
-			APPMODE = stdAppmode;
-		};
-		SCHEDULE = NON;
+	    AUTOSTART = FALSE;
+		SCHEDULE = FULL;
 		ACTIVATION = 1;
 		STACKSIZE = 256;
 		EVENT = EVTBitTiming;
 		EVENT = EVTMsgSendCompleted;
+	};
+
+	TASK TaskDisplayManager {
+		PRIORITY = 0x3;
+		AUTOSTART = FALSE;
+		SCHEDULE = NON;
+		ACTIVATION = 1;
+		STACKSIZE = 256;
+		EVENT = EVTMsgPause;
 	};
 	
 	ALARM ALARMBitTiming {
@@ -82,9 +88,9 @@ CPU test {
 	ALARM ALARMStopDisplay {
 		COUNTER = SystemCounter;
 		AUTOSTART = FALSE;
-		ACTION = ALARMCALLBACK {
-    		ALARMCALLBACKNAME = "ALARMStopDisplay";
-  		};
+		ACTION = ACTIVATETASK { 
+			TASK = TaskDisplayManager; 
+		};
 	};
 
 };

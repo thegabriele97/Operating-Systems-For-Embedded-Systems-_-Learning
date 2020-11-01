@@ -41,33 +41,25 @@ bool is_time_expired;
 TASK(TaskTwitterer) {
 	long start, total_time;
 
+	is_time_expired = false;
+	SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, MAX_MSG_LENGTH_MS);
+
 	do {
-		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, MAX_MSG_LENGTH_MS);
-		is_time_expired = false;
+		Serial.print("Sending msg #");
+		Serial.print(msg_index);
 
-		do {
-			Serial.print("Sending msg #");
-			Serial.print(msg_index);
+		start = millis();
+		ActivateTask(TaskSender);
+		Schedule();
 
-			start = millis();
-			ActivateTask(TaskSender);
-			WaitEvent(EVTMsgSendCompleted);
+		total_time = millis() - start;
+		Serial.print(" - Elapsed: ");
+		Serial.println(total_time);
 
-			total_time = millis() - start;
-			Serial.print(" - Elapsed: ");
-			Serial.println(total_time);
+	} while (!is_time_expired);
 
-		} while (ClearEvent(EVTMsgSendCompleted), !is_time_expired);
 
-		CancelAlarm(ALARMStopDisplay);
-		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, INTERMESSAGE_PAUSE_MS);
-		msg_index = (msg_index + 1) % PREDEF_MSGS_ARRAY_LEN;
-		
-		WaitEvent(EVTMsgPause);
-		CancelAlarm(ALARMMsgPause);
-		ClearEvent(EVTMsgPause);
-	} while(true);
-
+	CancelAlarm(ALARMStopDisplay);
 	TerminateTask();
 };
 
@@ -97,5 +89,19 @@ TASK(TaskSender) {
 	ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERWORD_PAUSE(MORSE_LED));
 	SetEvent(TaskTwitterer, EVTMsgSendCompleted);
 
+	TerminateTask();
+};
+
+TASK(TaskDisplayManager) {
+	SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, INTERMESSAGE_PAUSE_MS);
+	
+	is_time_expired = true;
+	msg_index = (msg_index + 1) % PREDEF_MSGS_ARRAY_LEN;
+		
+	WaitEvent(EVTMsgPause);
+	CancelAlarm(ALARMMsgPause);
+	ClearEvent(EVTMsgPause);
+
+	ActivateTask(TaskTwitterer);
 	TerminateTask();
 };

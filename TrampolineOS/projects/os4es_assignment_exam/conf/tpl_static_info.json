@@ -26,10 +26,10 @@
       "NAME" : "ALARMMsgPause"
     },    
     {
-      "ACTION" : "ALARMCALLBACK",
+      "ACTION" : "ACTIVATETASK",
       "ACTION_S" : 
       {
-        "ALARMCALLBACKNAME" : "ALARMStopDisplay"
+        "TASK" : "TaskDisplayManager"
       },
       "AUTOSTART" : "false",
       "COUNTER" : "SystemCounter",
@@ -60,13 +60,13 @@
       "ISRUSAGE" : [],
       "KIND" : "Resource",
       "NAME" : "INTERNAL_RES_SCHEDULER",
-      "PRIORITY" : 3,
+      "PRIORITY" : 4,
       "RESOURCEPROPERTY" : "INTERNAL",
       "TASKUSAGE" : 
       [
         
         {
-          "VALUE" : "TaskSender"
+          "VALUE" : "TaskDisplayManager"
         }
       ]
     }
@@ -91,9 +91,6 @@
       [
         
         {
-          "VALUE" : "EVTMsgPause"
-        },        
-        {
           "VALUE" : "EVTMsgSendCompleted"
         }
       ],
@@ -107,17 +104,7 @@
     },    
     {
       "ACTIVATION" : 1,
-      "AUTOSTART" : "true",
-      "AUTOSTART_S" : 
-      {
-        "APPMODE" : 
-        [
-          
-          {
-            "VALUE" : "stdAppmode"
-          }
-        ]
-      },
+      "AUTOSTART" : "false",
       "EVENT" : 
       [
         
@@ -130,8 +117,26 @@
       ],
       "KIND" : "Task",
       "NAME" : "TaskSender",
-      "NONPREEMPTABLE" : "true",
+      "NONPREEMPTABLE" : "false",
       "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "false",
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "EVTMsgPause"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "TaskDisplayManager",
+      "NONPREEMPTABLE" : "true",
+      "PRIORITY" : 3,
       "RESOURCE" : 
       [
         
