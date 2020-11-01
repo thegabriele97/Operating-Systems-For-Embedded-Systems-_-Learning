@@ -51,9 +51,7 @@ CPU test {
 
 	TASK TaskSender {
 		PRIORITY = 0x2;
-	    AUTOSTART = TRUE {
-			APPMODE = stdAppmode;
-		};
+	    AUTOSTART = FALSE;
 		SCHEDULE = NON;
 		ACTIVATION = 1;
 		STACKSIZE = 256;

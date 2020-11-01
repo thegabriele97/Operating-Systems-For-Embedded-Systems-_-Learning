@@ -36,35 +36,33 @@ static char *PREDEF_MSGS[PREDEF_MSGS_ARRAY_LEN] = {
 
 /** GLOBAL VARS	 **/
 static uint8_t msg_index = 0x00;
-bool is_time_expired;
+volatile bool is_time_expired;
 
 TASK(TaskTwitterer) {
-	long start, total_time;
+	long total_time;
 
 	do {
-		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, MAX_MSG_LENGTH_MS);
 		is_time_expired = false;
+		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, 0x0);
 
 		do {
 			Serial.print("Sending msg #");
 			Serial.print(msg_index);
 
-			start = millis();
+			total_time = millis();
 			ActivateTask(TaskSender);
 			WaitEvent(EVTMsgSendCompleted);
 
-			total_time = millis() - start;
+			total_time = millis() - total_time;
 			Serial.print(" - Elapsed: ");
 			Serial.println(total_time);
 
 		} while (ClearEvent(EVTMsgSendCompleted), !is_time_expired);
 
-		CancelAlarm(ALARMStopDisplay);
-		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, INTERMESSAGE_PAUSE_MS);
+		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, 0x0);
 		msg_index = (msg_index + 1) % PREDEF_MSGS_ARRAY_LEN;
 		
 		WaitEvent(EVTMsgPause);
-		CancelAlarm(ALARMMsgPause);
 		ClearEvent(EVTMsgPause);
 	} while(true);
 

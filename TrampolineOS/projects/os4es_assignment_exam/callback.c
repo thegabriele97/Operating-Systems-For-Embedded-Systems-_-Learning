@@ -4,6 +4,6 @@
 
 extern bool is_time_expired; /* defined in task.cpp */
 
-void ALARMStopDisplay_callback(void) {
+ALARMCALLBACK(ALARMStopDisplay) {
         is_time_expired = true;
-}
+};

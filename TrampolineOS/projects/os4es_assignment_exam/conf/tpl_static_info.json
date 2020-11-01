@@ -107,17 +107,7 @@
     },    
     {
       "ACTIVATION" : 1,
-      "AUTOSTART" : "true",
-      "AUTOSTART_S" : 
-      {
-        "APPMODE" : 
-        [
-          
-          {
-            "VALUE" : "stdAppmode"
-          }
-        ]
-      },
+      "AUTOSTART" : "false",
       "EVENT" : 
       [
         
