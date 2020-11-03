@@ -1,0 +1,2 @@
+build/machines/avr/arduino/cores/arduino/hooks.c.o: \
+ ../../trampoline/machines/avr/arduino/cores/arduino/hooks.c

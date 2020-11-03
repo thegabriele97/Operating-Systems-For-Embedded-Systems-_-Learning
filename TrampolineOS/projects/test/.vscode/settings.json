@@ -1,0 +1,14 @@
+{
+    "C_Cpp.default.includePath": [
+        "${myDefaultIncludePath}",
+        "${workspaceFolder}/../../trampoline/machines/avr/**",
+        "/usr/lib/gcc/avr/**",
+        "/usr/lib/avr/**",
+        "${workspaceFolder}/../../trampoline/os/**",
+        "${workspaceFolder}/../../trampoline/com/**",
+        "${workspaceFolder}/conf/**"
+    ],
+    "C_Cpp.default.defines": [
+        "USBCON"
+    ]
+}

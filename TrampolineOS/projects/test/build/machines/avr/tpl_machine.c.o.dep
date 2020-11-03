@@ -1,0 +1,115 @@
+build/machines/avr/tpl_machine.c.o: \
+ ../../trampoline/machines/avr/tpl_machine.c \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/iom328p.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h /usr/lib/avr/include/avr/interrupt.h \
+ ../../trampoline/machines/avr/tpl_machine.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_define.h \
+ ../../trampoline/os/tpl_config_def.h \
+ ../../trampoline/os/tpl_config_check.h conf/tpl_app_custom_types.h \
+ ../../trampoline/os/tpl_compiler.h \
+ ../../trampoline/machines/avr/tpl_os_std_types.h \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_config.h \
+ conf/tpl_app_define.h ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/machines/avr/tpl_machine.h \
+ ../../trampoline/os/tpl_compiler.h ../../trampoline/os/tpl_memmap.h \
+ ../../trampoline/os/tpl_os_definitions.h \
+ ../../trampoline/os/tpl_os_kernel.h \
+ ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/os/tpl_os_multicore_macros.h \
+ ../../trampoline/os/tpl_memmap.h conf/tpl_os.h \
+ ../../trampoline/os/tpl_os_error.h ../../trampoline/os/tpl_os_types.h \
+ ../../trampoline/os/tpl_os_os.h ../../trampoline/os/tpl_os_interrupt.h \
+ ../../trampoline/os/tpl_os_task.h ../../trampoline/os/tpl_os_resource.h \
+ ../../trampoline/os/tpl_os_event.h ../../trampoline/os/tpl_os_alarm.h
+
+/usr/lib/avr/include/avr/io.h:
+
+/usr/lib/avr/include/avr/sfr_defs.h:
+
+/usr/lib/avr/include/inttypes.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stdint.h:
+
+/usr/lib/avr/include/stdint.h:
+
+/usr/lib/avr/include/avr/iom328p.h:
+
+/usr/lib/avr/include/avr/portpins.h:
+
+/usr/lib/avr/include/avr/common.h:
+
+/usr/lib/avr/include/avr/version.h:
+
+/usr/lib/avr/include/avr/fuse.h:
+
+/usr/lib/avr/include/avr/lock.h:
+
+/usr/lib/avr/include/avr/interrupt.h:
+
+../../trampoline/machines/avr/tpl_machine.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_config_def.h:
+
+../../trampoline/os/tpl_config_check.h:
+
+conf/tpl_app_custom_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/machines/avr/tpl_os_std_types.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_config.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/machines/avr/tpl_machine.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+../../trampoline/os/tpl_os_definitions.h:
+
+../../trampoline/os/tpl_os_kernel.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/os/tpl_os_multicore_macros.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+conf/tpl_os.h:
+
+../../trampoline/os/tpl_os_error.h:
+
+../../trampoline/os/tpl_os_types.h:
+
+../../trampoline/os/tpl_os_os.h:
+
+../../trampoline/os/tpl_os_interrupt.h:
+
+../../trampoline/os/tpl_os_task.h:
+
+../../trampoline/os/tpl_os_resource.h:
+
+../../trampoline/os/tpl_os_event.h:
+
+../../trampoline/os/tpl_os_alarm.h:
