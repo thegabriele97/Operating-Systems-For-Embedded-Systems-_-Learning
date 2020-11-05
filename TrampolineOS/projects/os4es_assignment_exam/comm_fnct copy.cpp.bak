@@ -7,7 +7,7 @@
 #define MORSEENCODING2_UINT32(one, two, three, four) ((uint32_t)(((uint32_t)one << 24) | ((uint32_t)two << 16) | ((uint32_t)three << 8) | ((uint32_t)four << 0)))
 #define MORSEENCODING2_UINT32_INV(one, two, three, four) ((uint32_t)(((uint32_t)four << 24) | ((uint32_t)three << 16) | ((uint32_t)two << 8) | ((uint32_t)one << 0)))
 
-morse_t morse_encoding[][4] = {
+static const morse_t morse_encoding[][4] = {
     { DOT,  DASH, NILL, NILL }, // A
     { DASH, DOT,  DOT,  DOT  }, // B
     { DASH, DOT,  DASH, DOT  }, // C
@@ -28,10 +28,10 @@ morse_t morse_encoding[][4] = {
     { DOT,  DASH, DOT,  NILL }, // R
     { DOT,  DOT,  DOT,  NILL }, // S
     { DASH, NILL, NILL, NILL }, // T
-    { DOT,  DOT,  DASH, NILL }, // U
-    { DOT,  DOT,  DOT,  DASH }, // V
-    { DOT,  DASH, DASH, NILL }, // W
-    { DASH, DOT,  DOT,  DASH }, // X
+    { DASH, NILL, NILL, NILL }, // U
+    { DOT,  DOT,  DASH, NILL }, // V
+    { DOT,  DOT,  DOT,  DASH }, // W
+    { DOT,  DASH, DASH, NILL }, // X
     { DASH, DOT,  DASH, DASH }, // Y
     { DASH, DASH, DOT,  DOT  }  // Z
 };
@@ -54,5 +54,5 @@ void send_bits(uint8_t bits, uint8_t pin) {
 }
 
 void char2morse(char ch, morse_t *buffer) {
-    *MORSEBUFF2_UINT32_PTR(buffer) = *MORSEBUFF2_UINT32_PTR((morse_t *)morse_encoding[(ch & 0x1f) - 1]);
+    buffer = (morse_t *)morse_encoding[(((uint8_t)ch) & 0x1f) - 1];
 }
