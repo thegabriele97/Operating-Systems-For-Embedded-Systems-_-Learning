@@ -112,11 +112,7 @@ TASK(TaskSender) {
 			continue;
 		}
 		
-		//total_time = millis();
 		char2morse(*msg_ch_ptr, coded_char_buff);
-		//Serial.print("char2morse: ");
-		//Serial.println(millis() - total_time);
-
 		for (i = 0; i < MORSE_CODING_BUFFER_LEN && coded_char_buff[i] != NILL && !is_time_expired; i++) {
 			SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
 			send_bits(coded_char_buff[i], MORSE_LED);
