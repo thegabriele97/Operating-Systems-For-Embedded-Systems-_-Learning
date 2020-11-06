@@ -4,7 +4,7 @@
 #include "comm_fnct.h"
 
 /*
- * You shall read it from left to right. 
+ * You shall read it from right to left. 
  * The last '1' is meaningless and it's there
  * only for termination purpose
 */
