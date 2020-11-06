@@ -3,37 +3,38 @@
 #include "tpl_os.h"
 #include "comm_fnct.h"
 
-#define MORSEBUFF2_UINT32_PTR(buff_ptr) ((uint32_t *)buff_ptr)
-#define MORSEENCODING2_UINT32(one, two, three, four) ((uint32_t)(((uint32_t)one << 24) | ((uint32_t)two << 16) | ((uint32_t)three << 8) | ((uint32_t)four << 0)))
-#define MORSEENCODING2_UINT32_INV(one, two, three, four) ((uint32_t)(((uint32_t)four << 24) | ((uint32_t)three << 16) | ((uint32_t)two << 8) | ((uint32_t)one << 0)))
-
-morse_t morse_encoding[][4] = {
-    { DOT,  DASH, NILL, NILL }, // A
-    { DASH, DOT,  DOT,  DOT  }, // B
-    { DASH, DOT,  DASH, DOT  }, // C
-    { DASH, DOT,  DOT,  NILL }, // D
-    { DOT,  NILL, NILL, NILL }, // E
-    { DOT,  DOT,  DASH, DOT  }, // F
-    { DASH, DASH, DOT,  NILL }, // G
-    { DOT,  DOT,  DOT,  DOT  }, // H
-    { DOT,  DOT,  NILL, NILL }, // I
-    { DOT,  DASH, DASH, DASH }, // J
-    { DASH, DOT,  DASH, NILL }, // K
-    { DOT,  DASH, DOT,  DOT  }, // L
-    { DASH, DASH, NILL, NILL }, // M
-    { DASH, DOT,  NILL, NILL }, // N
-    { DASH, DASH, DASH, NILL }, // O
-    { DOT,  DASH, DASH, DOT  }, // P
-    { DASH, DASH, DOT,  DASH }, // Q
-    { DOT,  DASH, DOT,  NILL }, // R
-    { DOT,  DOT,  DOT,  NILL }, // S
-    { DASH, NILL, NILL, NILL }, // T
-    { DOT,  DOT,  DASH, NILL }, // U
-    { DOT,  DOT,  DOT,  DASH }, // V
-    { DOT,  DASH, DASH, NILL }, // W
-    { DASH, DOT,  DOT,  DASH }, // X
-    { DASH, DOT,  DASH, DASH }, // Y
-    { DASH, DASH, DOT,  DOT  }  // Z
+/*
+ * You shall read it from left to right. 
+ * The last '1' is meaningless and it's there
+ * only for termination purpose
+*/
+morse_t morse_encoding[] = {
+    0b000000001011101,  // A
+    0b000010101010111,  // B
+    0b001010111010111,  // C
+    0b000000101010111,  // D
+    0b000000000000101,  // E
+    0b000010101110101,  // F
+    0b000010101110111,  // G
+    0b000000101010101,  // H
+    0b000000000010101,  // I
+    0b101110111011101,  // J
+    0b000010111010111,  // K
+    0b000010101011101,  // L
+    0b000000101110111,  // M
+    0b000000001010111,  // N
+    0b001011101110111,  // O
+    0b001010111011101,  // P
+    0b101110101110111,  // Q
+    0b000000101011101,  // R
+    0b000000001010101,  // S
+    0b000000000010111,  // T
+    0b000000101110101,  // U
+    0b000010111010101,  // V
+    0b000010111011101,  // W
+    0b001011101010111,  // X
+    0b101110111010111,  // Y
+    0b001010101110111   // Z
 };
 
 void send_multiple_bits(uint8_t bits, uint8_t pin, uint8_t times) {
@@ -53,6 +54,6 @@ void send_bits(uint8_t bits, uint8_t pin) {
     } while (bits >>= 1);
 }
 
-void char2morse(char ch, morse_t *buffer) {
-    *MORSEBUFF2_UINT32_PTR(buffer) = *MORSEBUFF2_UINT32_PTR((morse_t *)morse_encoding[(ch & 0x1f) - 1]);
+void char2morse(char ch, morse_t *encoded) {
+    *encoded = morse_encoding[(ch & 0x1f) - 1];
 }

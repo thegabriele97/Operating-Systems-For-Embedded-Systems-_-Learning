@@ -3,25 +3,22 @@
 #include "stdint.h"
 #include "comm_fnct.h"
 
-/** CONSTS **/
+/*
+ * CONSTS 
+ */
+
 /*
  *	The size of a predefined messages array.
  *	Default value is 5
-*/
+ */
 #define PREDEF_MSGS_ARRAY_LEN 		0x0005
-
-/*
- *	The buffer size of a morse encoded character.
- *	Default value is 4
-*/
-#define MORSE_CODING_BUFFER_LEN 	0x0004
 
 /*
  *	The delay between a bit and another.
  *	
  *	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000
-*/
+ */
 #define BIT_TIMING_MS				0x0062
 
 /*
@@ -29,7 +26,7 @@
  *	
  * 	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000
-*/
+ */
 #define INTERMESSAGE_PAUSE_MS		0x01e8
 
 /*
@@ -37,7 +34,7 @@
  *	
  *	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000
-*/
+ */
 #define MAX_MSG_LENGTH_MS			0x2aea4
 
 /** MACRO **/
@@ -100,10 +97,8 @@ TASK(TaskTwitterer) {
 };
 
 TASK(TaskSender) {
-	morse_t coded_char_buff[MORSE_CODING_BUFFER_LEN];
-	uint8_t i;
+	morse_t encoded_char;
 	char *msg_ch_ptr;
-	long total_time;
 
 	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; !is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
 
@@ -112,14 +107,14 @@ TASK(TaskSender) {
 			continue;
 		}
 		
-		char2morse(*msg_ch_ptr, coded_char_buff);
-		for (i = 0; i < MORSE_CODING_BUFFER_LEN && coded_char_buff[i] != NILL && !is_time_expired; i++) {
-			SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
-			send_bits(coded_char_buff[i], MORSE_LED);
-			ACTION_WVALID_FLAG(!is_time_expired, send_bits(0x00, MORSE_LED));
-			CancelAlarm(ALARMBitTiming);
-		}
+		char2morse(*msg_ch_ptr, &encoded_char);
+		SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
 
+		do {
+			send_bits((uint8_t)(encoded_char & 0x01), MORSE_LED);
+		} while (!is_time_expired && (encoded_char >>= 1) != 0x0001);
+
+		CancelAlarm(ALARMBitTiming);
 		ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
 	}
 
