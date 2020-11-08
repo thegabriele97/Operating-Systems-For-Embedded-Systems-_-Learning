@@ -102,7 +102,7 @@
       "NONPREEMPTABLE" : "false",
       "PRIORITY" : 1,
       "SCHEDULE" : "FULL",
-      "STACKSIZE" : 256,
+      "STACKSIZE" : 96,
       "USEINTERNALRESOURCE" : "false"
     },    
     {
@@ -130,7 +130,7 @@
         }
       ],
       "SCHEDULE" : "NON",
-      "STACKSIZE" : 256,
+      "STACKSIZE" : 96,
       "USEINTERNALRESOURCE" : "false"
     }
   ]

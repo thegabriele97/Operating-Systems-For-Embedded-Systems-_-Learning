@@ -66,23 +66,29 @@ volatile bool is_time_expired;
 static uint8_t msg_index = 0x00;
 
 TASK(TaskTwitterer) {
+#ifdef DEBUG
 	long total_time;
+#endif
 
 	do {
 		is_time_expired = false;
 		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, 0x00);
 
 		do {
+		#ifdef DEBUG
 			Serial.print("Sending msg #");
 			Serial.print(msg_index);
-
 			total_time = millis();
+		#endif
+			
 			ActivateTask(TaskSender);
 			WaitEvent(EVTMsgSendCompleted);
 
+		#ifdef DEBUG
 			total_time = millis() - total_time;
 			Serial.print(" - Elapsed: ");
 			Serial.println(total_time);
+		#endif
 
 		} while (ClearEvent(EVTMsgSendCompleted), !is_time_expired);
 

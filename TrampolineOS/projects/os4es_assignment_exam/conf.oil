@@ -17,6 +17,8 @@ CPU test {
 			COPIER = "avr-objcopy";
 			SYSTEM = PYTHON;
 
+			// CFLAGS = "-D DEBUG"; // Uncomment this line if you want to read debug info from serial port
+
 			LIBRARY = serial;
 		};
 
@@ -44,7 +46,7 @@ CPU test {
 		};
 		SCHEDULE = FULL;
 		ACTIVATION = 1;
-		STACKSIZE = 256;
+		STACKSIZE = 96;
 		EVENT = EVTMsgPause;
 		EVENT = EVTMsgSendCompleted;
 	};
@@ -54,7 +56,7 @@ CPU test {
 	    AUTOSTART = FALSE;
 		SCHEDULE = NON;
 		ACTIVATION = 1;
-		STACKSIZE = 256;
+		STACKSIZE = 96;
 		EVENT = EVTBitTiming;
 		EVENT = EVTMsgSendCompleted;
 	};
