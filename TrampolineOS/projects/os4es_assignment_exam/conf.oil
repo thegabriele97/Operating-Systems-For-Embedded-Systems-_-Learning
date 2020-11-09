@@ -64,11 +64,19 @@ CPU test {
 	COUNTER SystemCounter {
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 0xffffff;
-		TICKSPERBASE = 1;
+		TICKSPERBASE = 6250; // every 6250 ticks, we have the counter that goes up by 1. Means every 100 ms
+		//TICKSPERBASE = 1;
+	};
+
+	COUNTER GoodCounter {
+		SOURCE = TIMER0_OVF;
+		MINCYCLE = 1;
+		MAXALLOWEDVALUE = 0xffffff;
+		TICKSPERBASE = 1; // every 6250 ticks, we have the counter that goes up by 1. Means every 100 ms
 	};
 	
 	ALARM ALARMBitTiming {
-		COUNTER = SystemCounter;
+		COUNTER = GoodCounter;
 		AUTOSTART = FALSE;
 		ACTION = SETEVENT {
 			TASK = TaskSender;

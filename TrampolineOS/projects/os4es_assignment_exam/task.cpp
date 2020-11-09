@@ -19,7 +19,7 @@
  *	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000
  */
-#define BIT_TIMING_MS				0x0062
+#define BIT_TIMING_MS				0x001
 
 /*
  *	How much time the display must stay off before starting a new message
@@ -105,6 +105,7 @@ TASK(TaskTwitterer) {
 TASK(TaskSender) {
 	morse_t encoded_char;
 	char *msg_ch_ptr;
+	unsigned long total_time;
 
 	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; !is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
 
@@ -117,7 +118,14 @@ TASK(TaskSender) {
 		SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
 
 		do {
+			total_time = micros();
+			
 			send_bits((uint8_t)(encoded_char & 0x01), MORSE_LED);
+			
+			total_time = micros() - total_time;
+			Serial.print("Bit time: ");
+			Serial.print(total_time);
+			Serial.println(" us");
 		} while (!is_time_expired && (encoded_char >>= 1) != 0x0001);
 
 		CancelAlarm(ALARMBitTiming);

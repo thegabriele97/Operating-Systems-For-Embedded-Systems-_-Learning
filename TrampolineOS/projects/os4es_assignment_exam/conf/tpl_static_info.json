@@ -11,7 +11,7 @@
         "TASK" : "TaskSender"
       },
       "AUTOSTART" : "false",
-      "COUNTER" : "SystemCounter",
+      "COUNTER" : "GoodCounter",
       "NAME" : "ALARMBitTiming"
     },    
     {
