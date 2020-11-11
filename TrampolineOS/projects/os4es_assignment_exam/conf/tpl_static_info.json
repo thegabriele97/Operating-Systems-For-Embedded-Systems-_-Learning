@@ -8,7 +8,7 @@
       "ACTION_S" : 
       {
         "EVENT" : "EVTBitTiming",
-        "TASK" : "TaskSender"
+        "TASK" : "TaskTwitterer"
       },
       "AUTOSTART" : "false",
       "COUNTER" : "SystemCounter",
@@ -46,10 +46,6 @@
     {
       "MASK" : 2,
       "NAME" : "EVTMsgPause"
-    },    
-    {
-      "MASK" : 4,
-      "NAME" : "EVTMsgSendCompleted"
     }
   ],
   "isr" : [],
@@ -60,13 +56,13 @@
       "ISRUSAGE" : [],
       "KIND" : "Resource",
       "NAME" : "INTERNAL_RES_SCHEDULER",
-      "PRIORITY" : 3,
+      "PRIORITY" : 2,
       "RESOURCEPROPERTY" : "INTERNAL",
       "TASKUSAGE" : 
       [
         
         {
-          "VALUE" : "TaskSender"
+          "VALUE" : "TaskTwitterer"
         }
       ]
     }
@@ -94,34 +90,13 @@
           "VALUE" : "EVTMsgPause"
         },        
         {
-          "VALUE" : "EVTMsgSendCompleted"
+          "VALUE" : "EVTBitTiming"
         }
       ],
       "KIND" : "Task",
       "NAME" : "TaskTwitterer",
-      "NONPREEMPTABLE" : "false",
-      "PRIORITY" : 1,
-      "SCHEDULE" : "FULL",
-      "STACKSIZE" : 96,
-      "USEINTERNALRESOURCE" : "false"
-    },    
-    {
-      "ACTIVATION" : 1,
-      "AUTOSTART" : "false",
-      "EVENT" : 
-      [
-        
-        {
-          "VALUE" : "EVTBitTiming"
-        },        
-        {
-          "VALUE" : "EVTMsgSendCompleted"
-        }
-      ],
-      "KIND" : "Task",
-      "NAME" : "TaskSender",
       "NONPREEMPTABLE" : "true",
-      "PRIORITY" : 2,
+      "PRIORITY" : 1,
       "RESOURCE" : 
       [
         
@@ -130,7 +105,7 @@
         }
       ],
       "SCHEDULE" : "NON",
-      "STACKSIZE" : 96,
+      "STACKSIZE" : 128,
       "USEINTERNALRESOURCE" : "false"
     }
   ]

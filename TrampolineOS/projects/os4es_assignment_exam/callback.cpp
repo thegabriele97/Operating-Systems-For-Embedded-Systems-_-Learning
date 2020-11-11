@@ -4,7 +4,7 @@
 
 /*
  * The trampoline definition of this macro doesn't work
- * with my cpp compiler :( 
+ * with my avr-cpp compiler :( 
  * But I think they forgot a ";" after the definition of
  * the function prototype, so let's redefine it correctly!
 */
@@ -17,7 +17,7 @@
 
 #endif
 
-extern bool is_time_expired;
+extern bool is_time_expired;		 /* defined in task.cpp */
 extern uint8_t MORSE_LED;            /* defined in code.cpp */
 
 ALARMCALLBACK(ALARMStopDisplay) {

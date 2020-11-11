@@ -38,7 +38,8 @@ build/code.cpp.o: code.cpp conf/tpl_os.h \
  /usr/lib/avr/include/avr/eeprom.h /usr/lib/avr/include/util/delay.h \
  /usr/lib/avr/include/util/delay_basic.h \
  ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
- ../../trampoline/machines/avr/arduino/variants/standard/pins_arduino.h
+ ../../trampoline/machines/avr/arduino/variants/standard/pins_arduino.h \
+ comm_fnct.h
 
 conf/tpl_os.h:
 
@@ -157,3 +158,5 @@ conf/tpl_app_custom_types.h:
 ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
 
 ../../trampoline/machines/avr/arduino/variants/standard/pins_arduino.h:
+
+comm_fnct.h:

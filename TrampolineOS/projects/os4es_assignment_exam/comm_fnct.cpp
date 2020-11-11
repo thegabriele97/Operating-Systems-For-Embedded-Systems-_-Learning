@@ -3,8 +3,27 @@
 #include "tpl_os.h"
 #include "comm_fnct.h"
 
+/** MACRO **/
+#define SEND_MULTIPLE_BITS_WEVENTS(bits, pin, times) 			 \
+	SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);   \
+	send_multiple_bits(bits, pin, times);						 \
+	CancelAlarm(ALARMBitTiming);
+
+#define ACTION_WVALID_FLAG(flag_to_check, action)				 \
+	if (flag_to_check) {										 \
+		action;													 \
+	}
+
+#define SEND_INTERWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, WORD_PAUSE)
+#define SEND_INTERCODEWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, CODEWORD_PAUSE)
+
+/** CONST GLOBAL VARS **/
+
 /*
- * You shall read it from right to left. 
+ * LookUp Table for char to morse conversion.
+ * Use the char itself (properly masked) as index of the table
+ * 
+ * Tip to understand it: You shall read it from right to left. 
  * The last '1' is meaningless and it's there
  * only for termination purpose
 */
@@ -37,15 +56,47 @@ morse_t morse_encoding[] = {
     0b001010101110111   // Z
 };
 
-void send_multiple_bits(uint8_t bits, uint8_t pin, uint8_t times) {
+extern uint8_t MORSE_LED;    /* defined in code.cpp */
+extern char *PREDEF_MSGS[];  /* defined in code.cpp */
+extern bool is_time_expired; /* defined in task.cpp */
 
+/** FUNCTION PROTOTYPES **/
+inline void send_bits(uint8_t, uint8_t);
+inline void char2morse(char, morse_t *);
+void send_multiple_bits(uint8_t, uint8_t, uint8_t);
+
+void do_sending(uint8_t msg_index) {
+    morse_t encoded_char;
+	char *msg_ch_ptr;
+
+	for (msg_ch_ptr = PREDEF_MSGS[msg_index]; !is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
+
+		if (*msg_ch_ptr == ' ') {
+			SEND_INTERWORD_PAUSE(MORSE_LED);
+			continue;
+		}
+		
+		char2morse(*msg_ch_ptr, &encoded_char);
+		SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
+
+		do {
+			send_bits((uint8_t)(encoded_char & 0x01), MORSE_LED);
+        } while (!is_time_expired && (encoded_char >>= 1) != 0x0001);
+
+		CancelAlarm(ALARMBitTiming);
+		ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
+	}
+
+	ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERWORD_PAUSE(MORSE_LED));
+}
+
+void send_multiple_bits(uint8_t bits, uint8_t pin, uint8_t times) {
     while(times--) {
         send_bits(bits, pin);
     }
 }
 
-void send_bits(uint8_t bits, uint8_t pin) {
-
+inline void send_bits(uint8_t bits, uint8_t pin) {
     do {
         digitalWrite(pin, bits & 0x01);
 
@@ -54,6 +105,6 @@ void send_bits(uint8_t bits, uint8_t pin) {
     } while (bits >>= 1);
 }
 
-void char2morse(char ch, morse_t *encoded) {
+inline void char2morse(char ch, morse_t *encoded) {
     *encoded = morse_encoding[(ch & 0x1f) - 1];
 }

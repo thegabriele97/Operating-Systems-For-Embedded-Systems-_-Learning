@@ -17,9 +17,9 @@ CPU test {
 			COPIER = "avr-objcopy";
 			SYSTEM = PYTHON;
 
-			// CFLAGS = "-D DEBUG"; // Uncomment this line if you want to read debug info from serial port
+			//CFLAGS = "-D DEBUG"; // Uncomment this line if you want to read debug info from serial port
 
-			LIBRARY = serial;
+			//LIBRARY = serial;    // Uncomment this line if you want to read debug info from serial port
 		};
 
 		SYSTEM_CALL = TRUE;
@@ -31,10 +31,6 @@ CPU test {
 		MASK = 0x01;
 	};
 
-	EVENT EVTMsgSendCompleted {
-		MASK = 0x04;
-	};
-
 	EVENT EVTMsgPause {
 		MASK = 0x02;
 	};
@@ -44,21 +40,11 @@ CPU test {
 	    AUTOSTART = TRUE {
 			APPMODE = stdAppmode;
 		};
-		SCHEDULE = FULL;
-		ACTIVATION = 1;
-		STACKSIZE = 96;
-		EVENT = EVTMsgPause;
-		EVENT = EVTMsgSendCompleted;
-	};
-
-	TASK TaskSender {
-		PRIORITY = 0x2;
-	    AUTOSTART = FALSE;
 		SCHEDULE = NON;
 		ACTIVATION = 1;
-		STACKSIZE = 96;
+		STACKSIZE = 128;
+		EVENT = EVTMsgPause;
 		EVENT = EVTBitTiming;
-		EVENT = EVTMsgSendCompleted;
 	};
 
 	COUNTER SystemCounter {
@@ -71,7 +57,7 @@ CPU test {
 		COUNTER = SystemCounter;
 		AUTOSTART = FALSE;
 		ACTION = SETEVENT {
-			TASK = TaskSender;
+			TASK = TaskTwitterer;
 			EVENT = EVTBitTiming;
 		};
 	};
