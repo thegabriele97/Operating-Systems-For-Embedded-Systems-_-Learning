@@ -1,0 +1,162 @@
+build/src/task.cpp.o: src/task.cpp conf/tpl_os.h \
+ ../../trampoline/os/tpl_os_definitions.h \
+ ../../trampoline/os/tpl_os_application_def.h conf/tpl_app_define.h \
+ ../../trampoline/os/tpl_config_def.h \
+ ../../trampoline/os/tpl_config_check.h \
+ ../../trampoline/os/tpl_os_application_def.h \
+ ../../trampoline/os/tpl_os_error.h ../../trampoline/os/tpl_os_types.h \
+ ../../trampoline/os/tpl_os_internal_types.h \
+ ../../trampoline/machines/avr/tpl_os_std_types.h \
+ ../../trampoline/os/tpl_os_custom_types.h conf/tpl_app_custom_types.h \
+ ../../trampoline/os/tpl_compiler.h \
+ ../../trampoline/machines/avr/tpl_machine.h \
+ ../../trampoline/os/tpl_os_custom_types.h \
+ ../../trampoline/os/tpl_compiler.h ../../trampoline/os/tpl_memmap.h \
+ ../../trampoline/os/tpl_os_os.h ../../trampoline/os/tpl_os_interrupt.h \
+ ../../trampoline/os/tpl_os_task.h ../../trampoline/os/tpl_os_resource.h \
+ ../../trampoline/os/tpl_os_event.h ../../trampoline/os/tpl_os_alarm.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
+ /usr/lib/avr/include/stdlib.h /usr/lib/gcc/avr/5.4.0/include/stddef.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdbool.h /usr/lib/avr/include/string.h \
+ /usr/lib/avr/include/math.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/iom328p.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h /usr/lib/avr/include/avr/interrupt.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/binary.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/WCharacter.h \
+ /usr/lib/avr/include/ctype.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/WString.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/Stream.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/Print.h \
+ /usr/lib/avr/include/stdio.h /usr/lib/gcc/avr/5.4.0/include/stdarg.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/Printable.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/USBAPI.h \
+ /usr/lib/avr/include/avr/eeprom.h /usr/lib/avr/include/util/delay.h \
+ /usr/lib/avr/include/util/delay_basic.h \
+ ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
+ ../../trampoline/machines/avr/arduino/variants/standard/pins_arduino.h \
+ src/comm_fnct.h
+
+conf/tpl_os.h:
+
+../../trampoline/os/tpl_os_definitions.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+conf/tpl_app_define.h:
+
+../../trampoline/os/tpl_config_def.h:
+
+../../trampoline/os/tpl_config_check.h:
+
+../../trampoline/os/tpl_os_application_def.h:
+
+../../trampoline/os/tpl_os_error.h:
+
+../../trampoline/os/tpl_os_types.h:
+
+../../trampoline/os/tpl_os_internal_types.h:
+
+../../trampoline/machines/avr/tpl_os_std_types.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+conf/tpl_app_custom_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/machines/avr/tpl_machine.h:
+
+../../trampoline/os/tpl_os_custom_types.h:
+
+../../trampoline/os/tpl_compiler.h:
+
+../../trampoline/os/tpl_memmap.h:
+
+../../trampoline/os/tpl_os_os.h:
+
+../../trampoline/os/tpl_os_interrupt.h:
+
+../../trampoline/os/tpl_os_task.h:
+
+../../trampoline/os/tpl_os_resource.h:
+
+../../trampoline/os/tpl_os_event.h:
+
+../../trampoline/os/tpl_os_alarm.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
+
+/usr/lib/avr/include/stdlib.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stddef.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stdbool.h:
+
+/usr/lib/avr/include/string.h:
+
+/usr/lib/avr/include/math.h:
+
+/usr/lib/avr/include/avr/pgmspace.h:
+
+/usr/lib/avr/include/inttypes.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stdint.h:
+
+/usr/lib/avr/include/stdint.h:
+
+/usr/lib/avr/include/avr/io.h:
+
+/usr/lib/avr/include/avr/sfr_defs.h:
+
+/usr/lib/avr/include/avr/iom328p.h:
+
+/usr/lib/avr/include/avr/portpins.h:
+
+/usr/lib/avr/include/avr/common.h:
+
+/usr/lib/avr/include/avr/version.h:
+
+/usr/lib/avr/include/avr/fuse.h:
+
+/usr/lib/avr/include/avr/lock.h:
+
+/usr/lib/avr/include/avr/interrupt.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/binary.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/WCharacter.h:
+
+/usr/lib/avr/include/ctype.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/WString.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/Stream.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/Print.h:
+
+/usr/lib/avr/include/stdio.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stdarg.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/Printable.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/USBAPI.h:
+
+/usr/lib/avr/include/avr/eeprom.h:
+
+/usr/lib/avr/include/util/delay.h:
+
+/usr/lib/avr/include/util/delay_basic.h:
+
+../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
+
+../../trampoline/machines/avr/arduino/variants/standard/pins_arduino.h:
+
+src/comm_fnct.h:

@@ -6,10 +6,10 @@ CPU test {
 		BUILD = TRUE {
 			TRAMPOLINE_BASE_PATH = "../../trampoline";
 			APP_NAME = "MorseTwitter";
-			APP_SRC = "code.cpp";
-			APP_SRC = "task.cpp";
-			APP_SRC = "comm_fnct.cpp";
-			APP_SRC = "callback.cpp";
+			APP_SRC = "src/code.cpp";
+			APP_SRC = "src/task.cpp";
+			APP_SRC = "src/comm_fnct.cpp";
+			APP_SRC = "src/callback.cpp";
 			CPPCOMPILER = "avr-g++";
 			COMPILER = "avr-gcc";
 			LINKER = "avr-gcc";
