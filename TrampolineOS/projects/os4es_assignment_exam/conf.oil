@@ -17,9 +17,9 @@ CPU test {
 			COPIER = "avr-objcopy";
 			SYSTEM = PYTHON;
 
-			//CFLAGS = "-D DEBUG"; // Uncomment this line if you want to read debug info from serial port
+			CFLAGS = "-D DEBUG"; // Uncomment this line if you want to read debug info from serial port
 
-			//LIBRARY = serial;    // Uncomment this line if you want to read debug info from serial port
+			LIBRARY = serial;    // Uncomment this line if you want to read debug info from serial port
 		};
 
 		SYSTEM_CALL = TRUE;
@@ -52,9 +52,16 @@ CPU test {
 		MAXALLOWEDVALUE = 0xffffff;
 		TICKSPERBASE = 1;
 	};
+
+	COUNTER EnhancedCounter {
+		SOURCE = TIMER2_OVF;
+		MINCYCLE = 1;
+		MAXALLOWEDVALUE = 0xffffff;
+		TICKSPERBASE = 1;
+	};
 	
 	ALARM ALARMBitTiming {
-		COUNTER = SystemCounter;
+		COUNTER = EnhancedCounter;
 		AUTOSTART = FALSE;
 		ACTION = SETEVENT {
 			TASK = TaskTwitterer;

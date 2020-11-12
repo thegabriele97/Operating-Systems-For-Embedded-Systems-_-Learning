@@ -11,7 +11,7 @@
  *	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000
  */
-#define BIT_TIMING_MS				0x0062
+#define BIT_TIMING_MS				100
 
 /*
  *	The inter codeword pause.
