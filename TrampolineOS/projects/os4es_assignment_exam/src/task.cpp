@@ -17,27 +17,26 @@ TASK(TaskTwitterer) {
 		SetRelAlarm(ALARMStopDisplay, MAX_MSG_LENGTH_MS, 0x00);
 
 		do {
-		#ifdef DEBUG
-			Serial.print("Sending msg #");
-			Serial.print(msg_index);
-			total_time = millis();
-		#endif
+			#ifdef DEBUG
+				Serial.print("Sending msg #");
+				Serial.print(msg_index);
+				total_time = millis();
+			#endif
 			
 			do_sending(msg_index);
 
-		#ifdef DEBUG
-			total_time = millis() - total_time;
-			Serial.print(" - Elapsed: ");
-			Serial.println(total_time);
-		#endif
-
+			#ifdef DEBUG
+				total_time = millis() - total_time;
+				Serial.print(" - Elapsed: ");
+				Serial.println(total_time);
+			#endif
 		} while (!is_time_expired);
 
-		SetRelAlarm(ALARMMsgPause, INTERMESSAGE_PAUSE_MS, 0x0);
+		SetRelAlarm(ALARMGeneralOneShot, INTERMESSAGE_PAUSE_MS, 0x0);
 		msg_index = (msg_index + 1) % PREDEF_MSGS_ARRAY_LEN;
 
-		WaitEvent(EVTMsgPause);
-		ClearEvent(EVTMsgPause);
+		WaitEvent(EVTGeneralOneShot);
+		ClearEvent(EVTGeneralOneShot);
 	} while(true);
 
 	TerminateTask();

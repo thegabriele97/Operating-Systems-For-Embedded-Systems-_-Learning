@@ -21,16 +21,15 @@ Because of this choice (regarding the work on a real hardware and not only via s
 
 In order to satisfy correctly the requested behaviour of the application, the first thing to do is to organize a suitable architecture that can describe it correctly.
 
-Thanks to the OIL file (that in an OSEK/VDX RTOS it’s used as preliminary configuration of the Operating System), I can setup the **general architecture of the implementation**. The most important elements specified in this file are one Task, three Alarms and two Events.
+Thanks to the OIL file (that in an OSEK/VDX RTOS it’s used as preliminary configuration of the Operating System), I can setup the **general architecture of the implementation**. The most important elements specified in this file are one Task, two Alarms and an Event.
 
 The single Task is:
-* **TaskTwitterer**: it is an endless-loop tasks that manages inter-messages pause and the right message to display. For each message, it calls a function that manages the selected message such as conversion to morse code, display timing, bit timing, inter-bit pauses and so on and so forth. 
+* **TaskTwitterer**: it is an endless-loop tasks that manages inter-messages pause and the right message to display. For each message, it calls a function that manages the selected message such as conversion to morse code, display timing, bit timing, inter-bit pauses and so on and so forth.
 It continuously check if the *end flag* is set or if reached the end of the message. If it is, the control is returned to *TaskTwitterer*.
 
-The three Alarms are:
+The two Alarms are:
 * **StopDisplay**: after 180 seconds since its activation, a callback is called whose action is to properly set the *end flag* variable.
-* **BitTiming**: each 100 ms it fires the event *EVTBitTiming* used for bit timing.
-* **MsgPause**: activated when the function that manages the message returns. After 0.5 second since its activation, the event *EVTMsgPause* is fired up.
+* **GeneralOneShot**: It's used both for bit timing (rising an event each 100 ms) and for inter-message pause long 0.5 seconds. It fires the event *EVTGeneralOneShot*.
 
 The source code is divided into different parts:
 * **code.cpp**: contains routines for setting up the system like serial port baud rate, the pin to use in order to drive the led and so on and so forth. Declares the array of messages to display and other useful variables.
@@ -61,7 +60,7 @@ This is mainly used for debug purpose and to check if the system is working corr
 
 ## Memory occupation
 
-The compiled program is not too much big. From a static analysis, the code is large about 7.76 KB and data (that is loaded into RAM during the boot) is large about 0.92 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
+The compiled program is not too much big. From a static analysis, the code is large about 7.71 KB and data (that is loaded into RAM during the boot) is large about 0.89 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
 
 A particular attention was demanded to RAM occupation (only 2 KB of SRAM are available in the Arduino UNO) during the write of the source code. In fact, all the variables used are of the minimum needed size (this is accomplished using the stdint.h library which defines the exact byte size of each variable type). 
 

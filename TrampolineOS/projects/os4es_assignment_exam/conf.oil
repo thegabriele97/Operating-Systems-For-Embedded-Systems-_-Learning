@@ -27,12 +27,8 @@ CPU test {
 
   	APPMODE stdAppmode {};
 
-	EVENT EVTBitTiming {
+	EVENT EVTGeneralOneShot {
 		MASK = 0x01;
-	};
-
-	EVENT EVTMsgPause {
-		MASK = 0x02;
 	};
 
 	TASK TaskTwitterer {
@@ -43,8 +39,7 @@ CPU test {
 		SCHEDULE = NON;
 		ACTIVATION = 1;
 		STACKSIZE = 128;
-		EVENT = EVTMsgPause;
-		EVENT = EVTBitTiming;
+		EVENT = EVTGeneralOneShot;
 	};
 
 	COUNTER SystemCounter {
@@ -53,21 +48,12 @@ CPU test {
 		TICKSPERBASE = 1;
 	};
 	
-	ALARM ALARMBitTiming {
+	ALARM ALARMGeneralOneShot {
 		COUNTER = SystemCounter;
 		AUTOSTART = FALSE;
 		ACTION = SETEVENT {
 			TASK = TaskTwitterer;
-			EVENT = EVTBitTiming;
-		};
-	};
-
-	ALARM ALARMMsgPause {
-		COUNTER = SystemCounter;
-		AUTOSTART = FALSE;
-		ACTION = SETEVENT {
-			TASK = TaskTwitterer;
-			EVENT = EVTMsgPause;
+			EVENT = EVTGeneralOneShot;
 		};
 	};
 

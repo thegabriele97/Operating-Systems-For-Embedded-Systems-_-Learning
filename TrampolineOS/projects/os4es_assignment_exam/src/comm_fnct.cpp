@@ -5,9 +5,9 @@
 
 /** MACRO **/
 #define SEND_MULTIPLE_BITS_WEVENTS(bits, pin, times) 			 \
-	SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);   \
+	SetRelAlarm(ALARMGeneralOneShot, BIT_TIMING_MS, BIT_TIMING_MS);   \
 	send_multiple_bits(bits, pin, times);						 \
-	CancelAlarm(ALARMBitTiming);
+	CancelAlarm(ALARMGeneralOneShot);
 
 #define ACTION_WVALID_FLAG(flag_to_check, action)				 \
 	if (flag_to_check) {										 \
@@ -77,13 +77,13 @@ void do_sending(uint8_t msg_index) {
         }
         
         char2morse(*msg_ch_ptr, &encoded_char);
-        SetRelAlarm(ALARMBitTiming, BIT_TIMING_MS, BIT_TIMING_MS);
+        SetRelAlarm(ALARMGeneralOneShot, BIT_TIMING_MS, BIT_TIMING_MS);
 
         do {
-            send_bits((uint8_t)(encoded_char & 0x01), MORSE_LED);
+            send_bits(((uint8_t)encoded_char) & 0x01, MORSE_LED);
         } while (!is_time_expired && (encoded_char >>= 1) != 0x0001);
 
-        CancelAlarm(ALARMBitTiming);
+        CancelAlarm(ALARMGeneralOneShot);
         ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
     }
 
@@ -100,8 +100,8 @@ inline void send_bits(uint8_t bits, uint8_t pin) {
     do {
         digitalWrite(pin, bits & 0x01);
 
-        WaitEvent(EVTBitTiming);
-        ClearEvent(EVTBitTiming);
+        WaitEvent(EVTGeneralOneShot);
+        ClearEvent(EVTGeneralOneShot);
     } while (bits >>= 1);
 }
 

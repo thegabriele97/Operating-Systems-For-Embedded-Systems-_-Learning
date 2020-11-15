@@ -7,23 +7,12 @@
       "ACTION" : "SETEVENT",
       "ACTION_S" : 
       {
-        "EVENT" : "EVTBitTiming",
+        "EVENT" : "EVTGeneralOneShot",
         "TASK" : "TaskTwitterer"
       },
       "AUTOSTART" : "false",
       "COUNTER" : "SystemCounter",
-      "NAME" : "ALARMBitTiming"
-    },    
-    {
-      "ACTION" : "SETEVENT",
-      "ACTION_S" : 
-      {
-        "EVENT" : "EVTMsgPause",
-        "TASK" : "TaskTwitterer"
-      },
-      "AUTOSTART" : "false",
-      "COUNTER" : "SystemCounter",
-      "NAME" : "ALARMMsgPause"
+      "NAME" : "ALARMGeneralOneShot"
     },    
     {
       "ACTION" : "ALARMCALLBACK",
@@ -41,11 +30,7 @@
     
     {
       "MASK" : 1,
-      "NAME" : "EVTBitTiming"
-    },    
-    {
-      "MASK" : 2,
-      "NAME" : "EVTMsgPause"
+      "NAME" : "EVTGeneralOneShot"
     }
   ],
   "isr" : [],
@@ -87,10 +72,7 @@
       [
         
         {
-          "VALUE" : "EVTMsgPause"
-        },        
-        {
-          "VALUE" : "EVTBitTiming"
+          "VALUE" : "EVTGeneralOneShot"
         }
       ],
       "KIND" : "Task",
