@@ -4,20 +4,15 @@
 #include "comm_fnct.h"
 
 /** MACRO **/
-#define SEND_MULTIPLE_BITS_WEVENTS(bits, pin, times) 			 \
-	SetRelAlarm(ALARMGeneralOneShot, BIT_TIMING_MS, BIT_TIMING_MS);   \
-	send_multiple_bits(bits, pin, times);						 \
-	CancelAlarm(ALARMGeneralOneShot);
-
-#define ACTION_WVALID_FLAG(flag_to_check, action)				 \
-	if (flag_to_check) {										 \
-		action;													 \
+#define ACTION_WVALID_FLAG(flag_to_check, action) \
+	if (flag_to_check) {                          \
+		action;                                   \
 	}
 
-#define SEND_INTERWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, WORD_PAUSE)
-#define SEND_INTERCODEWORD_PAUSE(pin) SEND_MULTIPLE_BITS_WEVENTS(0x00, pin, CODEWORD_PAUSE)
+#define SEND_INTERWORD_PAUSE(pin) send_multiple_bits(0x00, pin, WORD_PAUSE)
+#define SEND_INTERCODEWORD_PAUSE(pin) send_multiple_bits(0x00, pin, CODEWORD_PAUSE)
 
-/** CONST GLOBAL VARS **/
+/** GLOBAL VARS **/
 
 /*
  * LookUp Table for char to morse conversion.
@@ -69,25 +64,25 @@ void do_sending(uint8_t msg_index) {
     morse_t encoded_char;
     char *msg_ch_ptr;
 
+    SetRelAlarm(ALARMGeneralOneShot, BIT_TIMING_MS, BIT_TIMING_MS);
     for (msg_ch_ptr = PREDEF_MSGS[msg_index]; !is_time_expired && *msg_ch_ptr; msg_ch_ptr++) {
-
+        
         if (*msg_ch_ptr == ' ') {
             SEND_INTERWORD_PAUSE(MORSE_LED);
             continue;
         }
         
         char2morse(*msg_ch_ptr, &encoded_char);
-        SetRelAlarm(ALARMGeneralOneShot, BIT_TIMING_MS, BIT_TIMING_MS);
 
         do {
             send_bits(((uint8_t)encoded_char) & 0x01, MORSE_LED);
         } while (!is_time_expired && (encoded_char >>= 1) != 0x0001);
 
-        CancelAlarm(ALARMGeneralOneShot);
         ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERCODEWORD_PAUSE(MORSE_LED));
     }
 
     ACTION_WVALID_FLAG(!is_time_expired, SEND_INTERWORD_PAUSE(MORSE_LED));
+    CancelAlarm(ALARMGeneralOneShot);
 }
 
 void send_multiple_bits(uint8_t bits, uint8_t pin, uint8_t times) {

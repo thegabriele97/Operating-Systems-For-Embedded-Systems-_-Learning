@@ -60,7 +60,7 @@ This is mainly used for debug purpose and to check if the system is working corr
 
 ## Memory occupation
 
-The compiled program is not too much big. From a static analysis, the code is large about 7.71 KB and data (that is loaded into RAM during the boot) is large about 0.89 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
+The compiled program is not too much big. From a static analysis, the code is large about 7.59 KB and data (that is loaded into RAM during the boot) is large about 0.89 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
 
 A particular attention was demanded to RAM occupation (only 2 KB of SRAM are available in the Arduino UNO) during the write of the source code. In fact, all the variables used are of the minimum needed size (this is accomplished using the stdint.h library which defines the exact byte size of each variable type). 
 
