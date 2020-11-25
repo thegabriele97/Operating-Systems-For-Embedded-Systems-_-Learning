@@ -26,25 +26,14 @@ CPU test {
 
   	APPMODE stdAppmode {};
 
-	ALARM periodicAl {
-    COUNTER= SystemCounter;
-    ACTION = ACTIVATETASK {
-      TASK = periodicTask;
-    };
-    AUTOSTART = TRUE {
-      ALARMTIME = 1000; //activated each 1024 ms
-      CYCLETIME = 1000; //activated each 1024 ms
-      APPMODE = stdAppmode;
-    };
-  };
-
   TASK periodicTask {
-    PRIORITY = 20;
-    AUTOSTART = FALSE;
-    ACTIVATION = 1;
-    SCHEDULE = FULL;
-    STACKSIZE = 256;
-  };
+		PRIORITY = 20;
+		AUTOSTART = TRUE {
+			APPMODE = stdAppmode;
+		};
+		ACTIVATION = 1;
+		SCHEDULE = FULL;
+	};
 
 
 };

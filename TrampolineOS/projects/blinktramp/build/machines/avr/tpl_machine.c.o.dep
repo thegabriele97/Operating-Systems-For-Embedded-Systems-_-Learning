@@ -25,8 +25,7 @@ build/machines/avr/tpl_machine.c.o: \
  ../../trampoline/os/tpl_memmap.h conf/tpl_os.h \
  ../../trampoline/os/tpl_os_error.h ../../trampoline/os/tpl_os_types.h \
  ../../trampoline/os/tpl_os_os.h ../../trampoline/os/tpl_os_interrupt.h \
- ../../trampoline/os/tpl_os_task.h ../../trampoline/os/tpl_os_resource.h \
- ../../trampoline/os/tpl_os_alarm.h
+ ../../trampoline/os/tpl_os_task.h ../../trampoline/os/tpl_os_resource.h
 
 /usr/lib/avr/include/avr/io.h:
 
@@ -109,5 +108,3 @@ conf/tpl_os.h:
 ../../trampoline/os/tpl_os_task.h:
 
 ../../trampoline/os/tpl_os_resource.h:
-
-../../trampoline/os/tpl_os_alarm.h:

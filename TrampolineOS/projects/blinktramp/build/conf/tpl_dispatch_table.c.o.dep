@@ -16,10 +16,6 @@ build/conf/tpl_dispatch_table.c.o: conf/tpl_dispatch_table.c \
  ../../trampoline/os/tpl_os_interrupt_kernel.h \
  ../../trampoline/os/tpl_os_task_kernel.h \
  ../../trampoline/os/tpl_os_resource_kernel.h \
- ../../trampoline/os/tpl_os_alarm_kernel.h \
- ../../trampoline/os/tpl_os_timeobj_kernel.h \
- ../../trampoline/os/tpl_os_action.h \
- ../../trampoline/os/tpl_os_task_kernel.h \
  ../../trampoline/os/tpl_memmap.h
 
 ../../trampoline/os/tpl_dispatch_table.h:
@@ -65,13 +61,5 @@ conf/tpl_app_custom_types.h:
 ../../trampoline/os/tpl_os_task_kernel.h:
 
 ../../trampoline/os/tpl_os_resource_kernel.h:
-
-../../trampoline/os/tpl_os_alarm_kernel.h:
-
-../../trampoline/os/tpl_os_timeobj_kernel.h:
-
-../../trampoline/os/tpl_os_action.h:
-
-../../trampoline/os/tpl_os_task_kernel.h:
 
 ../../trampoline/os/tpl_memmap.h:

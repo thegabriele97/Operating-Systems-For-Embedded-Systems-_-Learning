@@ -14,7 +14,6 @@ build/code.cpp.o: code.cpp conf/tpl_os.h \
  ../../trampoline/os/tpl_compiler.h ../../trampoline/os/tpl_memmap.h \
  ../../trampoline/os/tpl_os_os.h ../../trampoline/os/tpl_os_interrupt.h \
  ../../trampoline/os/tpl_os_task.h ../../trampoline/os/tpl_os_resource.h \
- ../../trampoline/os/tpl_os_alarm.h \
  ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
  /usr/lib/avr/include/stdlib.h /usr/lib/gcc/avr/5.4.0/include/stddef.h \
  /usr/lib/gcc/avr/5.4.0/include/stdbool.h /usr/lib/avr/include/string.h \
@@ -83,8 +82,6 @@ conf/tpl_app_custom_types.h:
 ../../trampoline/os/tpl_os_task.h:
 
 ../../trampoline/os/tpl_os_resource.h:
-
-../../trampoline/os/tpl_os_alarm.h:
 
 ../../trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
 

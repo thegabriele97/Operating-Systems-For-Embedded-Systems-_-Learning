@@ -233,56 +233,6 @@ ReleaseResource:
 //  .size ReleaseResource,$-ReleaseResource
 
 
-  .global GetAlarmBase
-GetAlarmBase:
-  ldi r30,OSServiceId_GetAlarmBase  /* load the service id in r30 */
-  call tpl_sc_handler
-  ret
-  
-  .type GetAlarmBase,@function
-//  .size GetAlarmBase,$-GetAlarmBase
-
-
-  .global GetAlarm
-GetAlarm:
-  ldi r30,OSServiceId_GetAlarm  /* load the service id in r30 */
-  call tpl_sc_handler
-  ret
-  
-  .type GetAlarm,@function
-//  .size GetAlarm,$-GetAlarm
-
-
-  .global SetRelAlarm
-SetRelAlarm:
-  ldi r30,OSServiceId_SetRelAlarm  /* load the service id in r30 */
-  call tpl_sc_handler
-  ret
-  
-  .type SetRelAlarm,@function
-//  .size SetRelAlarm,$-SetRelAlarm
-
-
-  .global SetAbsAlarm
-SetAbsAlarm:
-  ldi r30,OSServiceId_SetAbsAlarm  /* load the service id in r30 */
-  call tpl_sc_handler
-  ret
-  
-  .type SetAbsAlarm,@function
-//  .size SetAbsAlarm,$-SetAbsAlarm
-
-
-  .global CancelAlarm
-CancelAlarm:
-  ldi r30,OSServiceId_CancelAlarm  /* load the service id in r30 */
-  call tpl_sc_handler
-  ret
-  
-  .type CancelAlarm,@function
-//  .size CancelAlarm,$-CancelAlarm
-
-
 
 #define API_STOP_SEC_CODE
 #include "tpl_as_memmap.h"

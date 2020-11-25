@@ -1,31 +1,6 @@
 
 {
-  "alarm" : 
-  [
-    
-    {
-      "ACTION" : "ACTIVATETASK",
-      "ACTION_S" : 
-      {
-        "TASK" : "periodicTask"
-      },
-      "AUTOSTART" : "true",
-      "AUTOSTART_S" : 
-      {
-        "ALARMTIME" : 1000,
-        "APPMODE" : 
-        [
-          
-          {
-            "VALUE" : "stdAppmode"
-          }
-        ],
-        "CYCLETIME" : 1000
-      },
-      "COUNTER" : "SystemCounter",
-      "NAME" : "periodicAl"
-    }
-  ],
+  "alarm" : [],
   "event" : [],
   "isr" : [],
   "resource" : [],
@@ -34,13 +9,23 @@
     
     {
       "ACTIVATION" : 1,
-      "AUTOSTART" : "false",
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
       "KIND" : "Task",
       "NAME" : "periodicTask",
       "NONPREEMPTABLE" : "false",
       "PRIORITY" : 1,
       "SCHEDULE" : "FULL",
-      "STACKSIZE" : 256,
+      "STACKSIZE" : 128,
       "USEINTERNALRESOURCE" : "false"
     }
   ]
