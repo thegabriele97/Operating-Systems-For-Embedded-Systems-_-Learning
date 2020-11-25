@@ -40,7 +40,7 @@
 #define INTERMESSAGE_PAUSE_MS		0x01e8
 
 /*
- *	How much time the display can be used before interrupted.
+ *	How much time the display can be used before being interrupted.
  *	
  *	PS: Please note that value 1000 equals to 1024 ms, 
  *		so 1 second is less than value 1000

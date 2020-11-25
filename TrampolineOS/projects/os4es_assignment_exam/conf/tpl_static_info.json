@@ -87,7 +87,7 @@
         }
       ],
       "SCHEDULE" : "NON",
-      "STACKSIZE" : 128,
+      "STACKSIZE" : 80,
       "USEINTERNALRESOURCE" : "false"
     }
   ]

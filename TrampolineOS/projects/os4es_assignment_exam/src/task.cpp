@@ -18,7 +18,7 @@ TASK(TaskTwitterer) {
 
 		do {
 			#ifdef DEBUG
-				Serial.print("Sending msg #");
+				Serial.print("Msg #");
 				Serial.print(msg_index);
 				total_time = millis();
 			#endif

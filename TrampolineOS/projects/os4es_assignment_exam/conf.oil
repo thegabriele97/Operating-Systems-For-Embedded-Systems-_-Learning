@@ -38,7 +38,7 @@ CPU test {
 		};
 		SCHEDULE = NON;
 		ACTIVATION = 1;
-		STACKSIZE = 128;
+		STACKSIZE = 80;
 		EVENT = EVTGeneralOneShot;
 	};
 
