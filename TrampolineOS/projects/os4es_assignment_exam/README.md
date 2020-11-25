@@ -50,7 +50,7 @@ This is due to the use of Timer0_OVF interrupt, based on the main Arduino uno’
 
 ## Task synchronization and events timing
 
-The task synchronization and all the application timing are accomplished through the use of Events that can be set either by Tasks or by Alarms. In order to have a correct timing and avoid time drifts, all the Alarms that manage those Events are restarted before taking a specific action that uses that specific event linked to that alarm. This restart is done during specific portion of the program, in this way the impact on the overall performance are negible (<< 1 ms).
+The task synchronization and all the application timing are accomplished through the use of Events or Call-backs set by Alarms. In order to have a correct timing and avoid time drifts, all the Alarms that manage those Events are restarted before taking important actions.
 
 ## The serial port
 
@@ -60,7 +60,11 @@ This is mainly used for debug purpose and to check if the system is working corr
 
 ## Memory occupation
 
-The compiled program is not too much big. From a static analysis, the code is large about 7.59 KB and data (that is loaded into RAM during the boot) is large about 0.89 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
+The compiled program is not too much big. From a static analysis, the code is large about 7.59 KB and data (that is loaded into RAM during the boot) is large about 0.84 KB (this can be different depends on the compiler used or if there is a change on the source code but approximately this is the correct value). The code is stored in the Arduino UNO’s 32 KB flash memory.
+
+To be more precise, 7124 bytes are occupied by the .text segment, 652 bytes are occupied by the .data segment, and 213 bytes by the .bss segments. The Program size is computed as .text + .data, while the Data size is computed as .data + .bss.
+
+As reference point for memory usage, a dummy project was taken under consideration during the development. This project contains only a task declared into the .OIL configuration file and the Task has an empty body. This means a starting point of 5666 bytes, 258 bytes and 411 bytes respectively for .text, .data and .bss. 
 
 A particular attention was demanded to RAM occupation (only 2 KB of SRAM are available in the Arduino UNO) during the write of the source code. In fact, all the variables used are of the minimum needed size (this is accomplished using the stdint.h library which defines the exact byte size of each variable type). 
 
