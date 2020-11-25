@@ -1,0 +1,10 @@
+conf.oil: \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/config.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/kernel.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/api.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/api_STM.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/api_ioc.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/avr/config.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/avr/arduino/config.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/avr/arduino/uno/config.oil \
+ /home/gabri97/os4es/Operating-Systems-For-Embedded-Systems-_-Learning/TrampolineOS/trampoline/goil/templates/config/config2.5.oil

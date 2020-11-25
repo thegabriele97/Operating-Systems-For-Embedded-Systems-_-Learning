@@ -1,0 +1,7 @@
+build/machines/avr/arduino/cores/arduino/new.cpp.o: \
+ ../../trampoline/machines/avr/arduino/cores/arduino/new.cpp \
+ /usr/lib/avr/include/stdlib.h /usr/lib/gcc/avr/5.4.0/include/stddef.h
+
+/usr/lib/avr/include/stdlib.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stddef.h:

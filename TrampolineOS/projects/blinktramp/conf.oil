@@ -1,0 +1,50 @@
+OIL_VERSION = "2.5" : "test" ;
+
+CPU test {    
+	OS config {
+		STATUS = STANDARD;
+		BUILD = TRUE {
+			TRAMPOLINE_BASE_PATH = "../../trampoline";
+			APP_NAME = "myProject";
+			APP_SRC = "code.cpp";
+			APP_SRC = "task.cpp";
+			CPPCOMPILER = "avr-g++";
+			COMPILER = "avr-gcc";
+			LINKER = "avr-gcc";
+			ASSEMBLER = "avr-gcc";
+			COPIER = "avr-objcopy";
+			SYSTEM = PYTHON;
+
+			LIBRARY = serial;
+		};
+
+		SYSTEM_CALL = TRUE;
+		
+		//STARTUPHOOK = TRUE;
+		//ERRORHOOK = TRUE;
+	};
+
+  	APPMODE stdAppmode {};
+
+	ALARM periodicAl {
+    COUNTER= SystemCounter;
+    ACTION = ACTIVATETASK {
+      TASK = periodicTask;
+    };
+    AUTOSTART = TRUE {
+      ALARMTIME = 1000; //activated each 1024 ms
+      CYCLETIME = 1000; //activated each 1024 ms
+      APPMODE = stdAppmode;
+    };
+  };
+
+  TASK periodicTask {
+    PRIORITY = 20;
+    AUTOSTART = FALSE;
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    STACKSIZE = 256;
+  };
+
+
+};
