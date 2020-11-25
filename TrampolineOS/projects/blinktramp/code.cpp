@@ -15,6 +15,6 @@ void setup()
 //* This task is periodic, with a period of 1024ms.
 TASK(periodicTask)
 {
-	
+	TerminateTask();	
 }
 
