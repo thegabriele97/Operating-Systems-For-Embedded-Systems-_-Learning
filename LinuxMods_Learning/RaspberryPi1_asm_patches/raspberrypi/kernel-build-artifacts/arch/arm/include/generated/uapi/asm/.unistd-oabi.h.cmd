@@ -1,0 +1,1 @@
+cmd_arch/arm/include/generated/uapi/asm/unistd-oabi.h := sh '/home/gabri97/poky/build_rpi1/tmp/work-shared/raspberrypi/kernel-source/arch/arm/tools/syscallhdr.sh' '/home/gabri97/poky/build_rpi1/tmp/work-shared/raspberrypi/kernel-source/arch/arm/tools/syscall.tbl' 'arch/arm/include/generated/uapi/asm/unistd-oabi.h' 'oabi' '' '__NR_SYSCALL_BASE'

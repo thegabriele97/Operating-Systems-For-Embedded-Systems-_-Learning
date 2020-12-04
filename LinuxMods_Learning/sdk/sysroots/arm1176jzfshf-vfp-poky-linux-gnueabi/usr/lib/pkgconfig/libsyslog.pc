@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: sysklogd
+Description: RFC5424 compliant syslogp() API and syslog() replacement from sysklogd
+Version: 2.1.1
+Requires:
+Libs: -L${libdir} -lsyslog
+Cflags: -I${includedir}
+

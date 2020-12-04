@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=/usr
+includedir=/usr/include
+libdir=/usr/lib
+host=arm-poky-linux-gnueabi
+mtcflags=
+mtlibs=-lpthread
+
+Name: gpg-error
+Description: GPG Runtime
+Version: 1.37-unknown
+Cflags: 
+Libs: -lgpg-error
+URL: https://www.gnupg.org/software/libgpg-error/index.html

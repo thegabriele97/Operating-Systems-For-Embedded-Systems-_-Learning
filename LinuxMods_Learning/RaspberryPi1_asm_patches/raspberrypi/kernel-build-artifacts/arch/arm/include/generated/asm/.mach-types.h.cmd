@@ -1,0 +1,1 @@
+cmd_arch/arm/include/generated/asm/mach-types.h := mkdir -p arch/arm/include/generated/asm/ && awk -f /home/gabri97/poky/build_rpi1/tmp/work-shared/raspberrypi/kernel-source/arch/arm/tools/gen-mach-types /home/gabri97/poky/build_rpi1/tmp/work-shared/raspberrypi/kernel-source/arch/arm/tools/mach-types > arch/arm/include/generated/asm/mach-types.h
