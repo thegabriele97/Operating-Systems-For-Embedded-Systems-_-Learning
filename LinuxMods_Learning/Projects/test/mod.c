@@ -9,36 +9,36 @@
 
 static int __init mod_init(void);
 static void __exit mod_cleanup(void);
+static ssize_t read(struct file *filp, char *buf, size_t count, loff_t *f_pos);
 
 static dev_t mod_dev;
 struct cdev mod_cdev;
 struct class *mod_class;
-
-static int MAJOR_NUMBER;
 static struct device *device;
 
 struct file_operations f_ops = {
-    .owner = THIS_MODULE
+    .owner = THIS_MODULE,
+    .read = read
 };
 
 static int __init mod_init() {
     int status;
 
-    printk(KERN_INFO "Loading module " KBUILD_MODNAME " ...\n");
+    printk(KERN_INFO KBUILD_MODNAME ": Loading module ...\n");
 
-    MAJOR_NUMBER = alloc_chrdev_region(&mod_dev, 0, 1, "mod_dev");
-    mod_cdev.owner = f_ops.owner;
+    status = alloc_chrdev_region(&mod_dev, 0, 1, "mod_dev");
 
     cdev_init(&mod_cdev, &f_ops);
-    if (!(status = cdev_add(&mod_cdev, mod_dev, 0))) {
-        printk(KERN_ERR "An error occurred while adding the new char device: %d\n", status);
+    mod_cdev.owner = f_ops.owner;
+    if ((status = cdev_add(&mod_cdev, mod_dev, 1)) < 0) {
+        printk(KERN_ERR KBUILD_MODNAME ": An error occurred while adding the new char device: %d\n", status);
         return status;
     }
 
     mod_class = class_create(THIS_MODULE, "devtest");
     device = device_create(mod_class, NULL, mod_dev, NULL, "devtest");
 
-    printk(KERN_INFO "Module " KBUILD_MODNAME " registered successfully with major number %d\n", MAJOR_NUMBER);
+    printk(KERN_INFO KBUILD_MODNAME ": Module registered successfully with major number %d:%d\n", MAJOR(mod_dev), MINOR(mod_dev));
 
     return 0;
 }
@@ -47,11 +47,17 @@ static void __exit mod_cleanup() {
 
     printk(KERN_INFO "Unloading " KBUILD_MODNAME " ...\n");
 
-    device_del(device);
+    device_destroy(mod_class, mod_dev);
+    class_destroy(mod_class);
     cdev_del(&mod_cdev);
     unregister_chrdev_region(mod_dev, 1);
 
     printk(KERN_INFO "Module " KBUILD_MODNAME " unloaded successfully\n");
+}
+
+static ssize_t read(struct file *filp, char *buf, size_t count, loff_t *f_pos) {
+    printk(KERN_DEBUG KBUILD_MODNAME ": Reading %d bytes\n", count);
+    return count;
 }
 
 module_init(mod_init);
