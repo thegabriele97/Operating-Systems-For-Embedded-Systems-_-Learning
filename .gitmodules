@@ -1,0 +1,3 @@
+[submodule "LinuxMods_Learning/Projects/Heart_Rate_Monitor/meta-hrmonitor"]
+	path = LinuxMods_Learning/Projects/Heart_Rate_Monitor/meta-hrmonitor
+	url = https://github.com/thegabriele97/meta-hrmonitor
