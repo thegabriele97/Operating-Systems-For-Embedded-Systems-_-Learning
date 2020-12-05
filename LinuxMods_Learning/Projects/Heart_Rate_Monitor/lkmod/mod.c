@@ -32,7 +32,6 @@ static int __init mod_init() {
     int status;
 
     PRINTK_INF("Loading module...\n");
-    PRINTK(KERN_DEBUG, "The size of an int is %d\n", sizeof(int));
 
     // Trying to allocate a now character device region
     status = alloc_chrdev_region(&mod_dev, 0, 1, KBUILD_MODNAME);
@@ -71,28 +70,29 @@ static void mod_cleanup() {
 }
 
 static ssize_t read(struct file *filp, char *buf, size_t count, loff_t *f_pos) {
-    void *curr_ptr;
-    size_t int_count;
     ssize_t bytes_read = 0;
+    size_t int_count;
+    void *curr_ptr;
 
-    PRINTK(KERN_DEBUG, "Request for reading %d bytes\n", count);
-    PRINTK(KERN_DEBUG, "f_pos is %llu\n", *f_pos);
-    
-    while(1) {
+    PRINTK(KERN_DEBUG, "Request for reading %d bytes from %llu\n", count, *f_pos);
 
+    while (count > 0) { 
         int_count = count;
-        if (*f_pos + count >= N_VALS) {
-            int_count = (N_VALS - *f_pos);
+        if (*f_pos + count >= (N_VALS << 2)) {
+            int_count = ((N_VALS << 2) - *f_pos);
         }
 
         curr_ptr = ((char *)ppg) + *f_pos;
         copy_to_user(buf, curr_ptr, int_count);
-        PRINTK(KERN_DEBUG, "Copying to user from 0x%08p : %d\n", curr_ptr, (char)(*((char *)curr_ptr)));
+        PRINTK(KERN_DEBUG, "Copying to user from %#x : %x\n", (int)curr_ptr, (char)(*((char *)curr_ptr)));
         
         *f_pos += int_count;
-        *f_pos = (*f_pos / N_VALS); //MODULO NON ESISTE
-
+        if (*f_pos >= (N_VALS << 2)) {
+            *f_pos = 0;
+        }
+        
         bytes_read += int_count;
+        count -= int_count;
     }
 
     return bytes_read;

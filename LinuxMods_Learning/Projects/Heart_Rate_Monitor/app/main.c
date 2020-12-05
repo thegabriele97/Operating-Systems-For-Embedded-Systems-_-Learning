@@ -19,8 +19,8 @@ void waitfor(double ms) {
 }
 
 int main() {
-    int fd, n;
-    char ch[10];
+    int fd, n, val, i;
+    int buf[2051];
     
     //printf("a\n");
     /*for (int i = 0; i < 50; i++) {
@@ -32,13 +32,18 @@ int main() {
     fd = open("/dev/virtppg", O_RDONLY);
     printf("Opened file with fd = %d\n", fd);
 
-    printf("Reading 3 bytes..\n");
-    n = read(fd, &ch, 3);
-    printf("Bytes read: %d\n", n);
+    printf("n bytes to read: ");
+    scanf("%d", &val);
+    
+    n = read(fd, &buf, val);
+    for (i = 0; i < (n >> 2); i++) {
+        printf("%d ", buf[i]);
+        if (i / 5 == 0) {
+            printf("\n");
+        }
+    }
 
-    printf("Reading 1 bytes..\n");
-    n = read(fd, &ch, 1);
-    printf("Bytes read: %d\n", n);
+    printf("Printed %d\n", i);
 
     close(fd);
     return 0;
