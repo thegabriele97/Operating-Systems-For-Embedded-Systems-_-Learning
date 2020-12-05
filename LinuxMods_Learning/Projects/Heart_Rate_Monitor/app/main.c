@@ -19,22 +19,27 @@ void waitfor(double ms) {
 }
 
 int main() {
-    int fd;
-    char ch;
+    int fd, n;
+    char ch[10];
     
     //printf("a\n");
-    for (int i = 0; i < 50; i++) {
+    /*for (int i = 0; i < 50; i++) {
         waitfor(20);
         //usleep(20000);
-    }
+    }*/
     //printf("b\n");
 
-    /*fd = open("/dev/devtest", O_RDONLY);
+    fd = open("/dev/virtppg", O_RDONLY);
     printf("Opened file with fd = %d\n", fd);
 
-    read(fd, &ch, 0x1);
-    printf("Read: %c\n", ch);
+    printf("Reading 3 bytes..\n");
+    n = read(fd, &ch, 3);
+    printf("Bytes read: %d\n", n);
 
-    close(fd);*/
+    printf("Reading 1 bytes..\n");
+    n = read(fd, &ch, 1);
+    printf("Bytes read: %d\n", n);
+
+    close(fd);
     return 0;
 }

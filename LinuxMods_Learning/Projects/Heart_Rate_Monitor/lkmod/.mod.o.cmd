@@ -683,6 +683,16 @@ deps_/home/gabri97/Operating-Systems-For-Embedded-Systems-_-Learning/LinuxMods_L
   include/linux/projid.h \
   include/uapi/linux/quota.h \
   include/linux/nfs_fs_i.h \
+  include/linux/uaccess.h \
+  arch/arm/include/asm/uaccess.h \
+    $(wildcard include/config/cpu/sw/domain/pan.h) \
+    $(wildcard include/config/cpu/use/domains.h) \
+    $(wildcard include/config/uaccess/with/memcpy.h) \
+  arch/arm/include/asm/domain.h \
+    $(wildcard include/config/io/36.h) \
+    $(wildcard include/config/cpu/cp15/mmu.h) \
+  include/asm/extable.h \
+  /home/gabri97/Operating-Systems-For-Embedded-Systems-_-Learning/LinuxMods_Learning/Projects/Heart_Rate_Monitor/lkmod/data.h \
 
 /home/gabri97/Operating-Systems-For-Embedded-Systems-_-Learning/LinuxMods_Learning/Projects/Heart_Rate_Monitor/lkmod/mod.o: $(deps_/home/gabri97/Operating-Systems-For-Embedded-Systems-_-Learning/LinuxMods_Learning/Projects/Heart_Rate_Monitor/lkmod/mod.o)
 

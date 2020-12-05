@@ -13,7 +13,7 @@ KBUILD_DIR=/home/gabri97/Operating-Systems-For-Embedded-Systems-_-Learning/Linux
 #
 # Kernel module build dependency
 all:
-	make -C $(KBUILD_DIR) M=$(PWD) modules
+	make -C $(KBUILD_DIR) M=$(PWD) SRC=$(PWD) modules
 #
 # Kernel module clean dependency
 clean:
