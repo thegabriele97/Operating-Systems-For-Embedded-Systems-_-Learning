@@ -35,7 +35,6 @@ __used __section(__versions) = {
 	{ 0xc70c92e7, "class_destroy" },
 	{ 0xfbb22f4d, "device_destroy" },
 	{ 0x51a910c0, "arm_copy_to_user" },
-	{ 0x2cfde9a2, "warn_slowpath_fmt" },
 	{ 0xc5850110, "printk" },
 	{ 0xb1ad28e0, "__gnu_mcount_nc" },
 };
@@ -43,4 +42,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "E3F61CD22C4807B10BE5BC7");
+MODULE_INFO(srcversion, "7025E094FF6956327B63719");

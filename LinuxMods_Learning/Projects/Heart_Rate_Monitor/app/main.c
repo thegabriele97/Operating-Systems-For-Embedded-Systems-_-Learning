@@ -20,7 +20,7 @@ void waitfor(double ms) {
 
 int main() {
     int fd, n, val, i;
-    int buf[2051];
+    int buf[4102];
     
     //printf("a\n");
     /*for (int i = 0; i < 50; i++) {

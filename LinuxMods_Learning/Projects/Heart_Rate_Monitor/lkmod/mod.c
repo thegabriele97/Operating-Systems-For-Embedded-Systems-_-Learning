@@ -71,28 +71,26 @@ static void mod_cleanup() {
 
 static ssize_t read(struct file *filp, char *buf, size_t count, loff_t *f_pos) {
     ssize_t bytes_read = 0;
-    size_t int_count;
-    void *curr_ptr;
+    char *curr_ptr;
 
     PRINTK(KERN_DEBUG, "Request for reading %d bytes from %llu\n", count, *f_pos);
 
     while (count > 0) { 
-        int_count = count;
-        if (*f_pos + count >= (N_VALS << 2)) {
-            int_count = ((N_VALS << 2) - *f_pos);
-        }
 
         curr_ptr = ((char *)ppg) + *f_pos;
-        copy_to_user(buf, curr_ptr, int_count);
-        PRINTK(KERN_DEBUG, "Copying to user from %#x : %x\n", (int)curr_ptr, (char)(*((char *)curr_ptr)));
+        PRINTK(KERN_DEBUG, "Copying to user %#x, %d bytes from %#x : %#x\n", (int)buf, 1, (int)curr_ptr, (char)(*curr_ptr));
+        if (copy_to_user(buf++, curr_ptr, 1) != 0) {
+            PRINTK_ERR("Something bad happened while copying data to user. Returning..\n");
+            break;
+        }
         
-        *f_pos += int_count;
+        *f_pos += 1;
         if (*f_pos >= (N_VALS << 2)) {
             *f_pos = 0;
         }
         
-        bytes_read += int_count;
-        count -= int_count;
+        count--;
+        bytes_read++;
     }
 
     return bytes_read;
