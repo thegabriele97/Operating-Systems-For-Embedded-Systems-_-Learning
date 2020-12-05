@@ -1,50 +1,29 @@
 #include <stdio.h>
-#include <time.h>
 #include "unistd.h"
 #include "fcntl.h"
+#include "pthread.h"
 
-void waitfor(double ms) {
-    clock_t begin, end;
-    clock_t a, b;
-    double time_spent = 0.0;
-    
-    ms /= 1000;
-    begin = clock();
-
-    do {
-        end = clock();
-        time_spent = (double)(end - begin) / (CLOCKS_PER_SEC);
-    } while (time_spent < ms);
-
-}
+#include "src/global.h"
+#include "src/threads.h"
 
 int main() {
-    int fd, n, val, i;
-    int buf[4102];
-    
-    //printf("a\n");
-    /*for (int i = 0; i < 50; i++) {
-        waitfor(20);
-        //usleep(20000);
-    }*/
-    //printf("b\n");
+    pthread_t threads[2];
+    int pipe_fd[2];
+    int retval1, retval2 = 0;
 
-    fd = open("/dev/virtppg", O_RDONLY);
-    printf("Opened file with fd = %d\n", fd);
+    if (pipe(pipe_fd) < 0) {
+        fprintf(stderr, "Error: unable to create the pipe\n");
+    } 
 
-    printf("n bytes to read: ");
-    scanf("%d", &val);
-    
-    n = read(fd, &buf, val);
-    for (i = 0; i < (n >> 2); i++) {
-        printf("%d ", buf[i]);
-        if (i / 5 == 0) {
-            printf("\n");
-        }
+    retval1 = pthread_create(&threads[0], NULL, _th_acquiring, &pipe_fd[1]);
+    retval2 = pthread_create(&threads[1], NULL, _th_compute, &pipe_fd[0]);
+
+    if (retval1) {
+        fprintf(stderr, "Error: return code of pthread_create is %d\n", retval1);
     }
 
-    printf("Printed %d\n", i);
+    pthread_join(threads[0], &retval1);
+    pthread_join(threads[1], &retval2);
 
-    close(fd);
-    return 0;
+    return retval1;
 }

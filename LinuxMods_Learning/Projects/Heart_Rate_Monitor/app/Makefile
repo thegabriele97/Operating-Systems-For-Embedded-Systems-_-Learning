@@ -1,6 +1,6 @@
 
 all:
-	$(CC) *.c -o hrmon
+	$(CC) -O *.c src/*.c -lpthread -lm -o hrmon
 
 clean:
 	@rm -rf a.out hrmon
