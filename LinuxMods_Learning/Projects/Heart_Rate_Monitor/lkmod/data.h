@@ -1,5 +1,5 @@
 
-#define N_VALS 2051
+#define N_VALS 2048
 
 /*
  * Some random data for 
