@@ -7,33 +7,26 @@
 #include "fft.h"
 
 void waitfor(double ms) {
-    //Let's see if you can use nanosleep
-    clock_t begin, end;
-    clock_t a, b;
-    double time_spent = 0.0;
+    clock_t begin;
     
     ms /= 1000;
     begin = clock();
-
-    do {
-        end = clock();
-        time_spent = (double)(end - begin) / (CLOCKS_PER_SEC);
-    } while (time_spent < ms);
-
+    while((double)(clock() - begin) / (CLOCKS_PER_SEC) < ms);
 }
 
-void *_th_acquiring(void *fd_wr) {
-    int buf;
+void *_th_acquire(void *fd_wr) {
     int fd, i;
+    int buf;
+    clock_t begin, end;
 
     if ((fd = open(ACQUIRE_DEVICE, O_RDONLY)) < 0) {
         fprintf(stderr, "Unable to open %s\n", ACQUIRE_DEVICE);
-        pthread_exit(&fd);
+        pthread_exit(NULL);
     }
 
     do {
         for (i = 0; i < MAX_DATA; i++) {
-            waitfor(20);
+            waitfor(SAMPLE_PERIOD_MS);
 
             read(fd, &buf, sizeof buf);
             write(*(int *)fd_wr, &buf, sizeof buf);
@@ -64,8 +57,8 @@ void *_th_compute(void *fd_rd) {
         // power-spectrum density
         pds(v, MAX_DATA, abs);
 
-        minIdx = (0.5*2048)/50;   // position in the PSD of the spectral line corresponding to 30 bpm
-        maxIdx = 3*2048/50;       // position in the PSD of the spectral line corresponding to 180 bpm
+        minIdx = (0.5*MAX_DATA)/50;   // position in the PSD of the spectral line corresponding to 30 bpm
+        maxIdx = 3*MAX_DATA/50;       // position in the PSD of the spectral line corresponding to 180 bpm
 
         // Find the peak in the PSD from 30 bpm to 180 bpm
         for(i = m = minIdx; i < maxIdx; i++) {
@@ -75,7 +68,7 @@ void *_th_compute(void *fd_rd) {
         }
 
         // Print the heart beat in bpm
-        printf( "\n\n\n%d bpm\n\n\n", (m)*60*50/2048 );
+        printf("\n\n\n%d bpm\n\n\n", (m)*60*50/MAX_DATA);
     } while(1);
 
     pthread_exit(NULL);
