@@ -6,9 +6,6 @@
  * virtual ppg sensor
  */
 int ppg[] = {
-    1,
-    2,
-    3,
     18133,
     18149,
     18179,
