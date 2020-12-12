@@ -56,9 +56,9 @@ extern char *PREDEF_MSGS[];  /* defined in code.cpp */
 extern bool is_time_expired; /* defined in task.cpp */
 
 /** FUNCTION PROTOTYPES **/
+void send_multiple_bits(uint8_t, uint8_t, uint8_t);
 inline void send_bits(uint8_t, uint8_t);
 inline void char2morse(char, morse_t *);
-void send_multiple_bits(uint8_t, uint8_t, uint8_t);
 
 void do_sending(uint8_t msg_index) {
     morse_t encoded_char;
